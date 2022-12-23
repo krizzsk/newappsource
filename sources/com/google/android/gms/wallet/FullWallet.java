@@ -1,0 +1,71 @@
+package com.google.android.gms.wallet;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.ReflectedParcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
+import com.google.android.gms.identity.intents.model.UserAddress;
+
+@SafeParcelable.Class(creator = "FullWalletCreator")
+@SafeParcelable.Reserved({1})
+public final class FullWallet extends AbstractSafeParcelable implements ReflectedParcelable {
+    public static final Parcelable.Creator<FullWallet> CREATOR = new zzl();
+    @SafeParcelable.Field(mo65739id = 2)
+    public String zza;
+    @SafeParcelable.Field(mo65739id = 3)
+    public String zzb;
+    @SafeParcelable.Field(mo65739id = 4)
+    public zzaj zzc;
+    @SafeParcelable.Field(mo65739id = 5)
+    public String zzd;
+    @SafeParcelable.Field(mo65739id = 6)
+    public zza zze;
+    @SafeParcelable.Field(mo65739id = 7)
+    public zza zzf;
+    @SafeParcelable.Field(mo65739id = 8)
+    public String[] zzg;
+    @SafeParcelable.Field(mo65739id = 9)
+    public UserAddress zzh;
+    @SafeParcelable.Field(mo65739id = 10)
+    public UserAddress zzi;
+    @SafeParcelable.Field(mo65739id = 11)
+    public InstrumentInfo[] zzj;
+    @SafeParcelable.Field(mo65739id = 12)
+    public PaymentMethodToken zzk;
+
+    private FullWallet() {
+    }
+
+    public final void writeToParcel(Parcel parcel, int i) {
+        int beginObjectHeader = SafeParcelWriter.beginObjectHeader(parcel);
+        SafeParcelWriter.writeString(parcel, 2, this.zza, false);
+        SafeParcelWriter.writeString(parcel, 3, this.zzb, false);
+        SafeParcelWriter.writeParcelable(parcel, 4, this.zzc, i, false);
+        SafeParcelWriter.writeString(parcel, 5, this.zzd, false);
+        SafeParcelWriter.writeParcelable(parcel, 6, this.zze, i, false);
+        SafeParcelWriter.writeParcelable(parcel, 7, this.zzf, i, false);
+        SafeParcelWriter.writeStringArray(parcel, 8, this.zzg, false);
+        SafeParcelWriter.writeParcelable(parcel, 9, this.zzh, i, false);
+        SafeParcelWriter.writeParcelable(parcel, 10, this.zzi, i, false);
+        SafeParcelWriter.writeTypedArray(parcel, 11, this.zzj, i, false);
+        SafeParcelWriter.writeParcelable(parcel, 12, this.zzk, i, false);
+        SafeParcelWriter.finishObjectHeader(parcel, beginObjectHeader);
+    }
+
+    @SafeParcelable.Constructor
+    public FullWallet(@SafeParcelable.Param(mo65742id = 2) String str, @SafeParcelable.Param(mo65742id = 3) String str2, @SafeParcelable.Param(mo65742id = 4) zzaj zzaj, @SafeParcelable.Param(mo65742id = 5) String str3, @SafeParcelable.Param(mo65742id = 6) zza zza2, @SafeParcelable.Param(mo65742id = 7) zza zza3, @SafeParcelable.Param(mo65742id = 8) String[] strArr, @SafeParcelable.Param(mo65742id = 9) UserAddress userAddress, @SafeParcelable.Param(mo65742id = 10) UserAddress userAddress2, @SafeParcelable.Param(mo65742id = 11) InstrumentInfo[] instrumentInfoArr, @SafeParcelable.Param(mo65742id = 12) PaymentMethodToken paymentMethodToken) {
+        this.zza = str;
+        this.zzb = str2;
+        this.zzc = zzaj;
+        this.zzd = str3;
+        this.zze = zza2;
+        this.zzf = zza3;
+        this.zzg = strArr;
+        this.zzh = userAddress;
+        this.zzi = userAddress2;
+        this.zzj = instrumentInfoArr;
+        this.zzk = paymentMethodToken;
+    }
+}

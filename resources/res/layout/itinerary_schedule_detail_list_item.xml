@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.view.TransitLineListItemView android:id="@+id/list_item" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.moovit.view.ScheduleView android:id="@+id/time" android:tag="accessory" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </com.moovit.view.TransitLineListItemView>
+    <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:id="@+id/platform" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:id="@+id/metadata" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.moovit.app.servicealerts.LineServiceAlertDigestView android:id="@+id/service_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="11dp" android:layout_marginRight="@dimen/screen_edge"/>
+    <Space android:layout_width="match_parent" android:layout_height="14dp"/>
+</LinearLayout>

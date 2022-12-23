@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_check_mark_circ_24_good" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/user_account_connected" app:titleTextColor="?attr/colorGood" style="?attr/listItemSectionHeaderLargeStyle"/>
+    <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="@string/user_account_connected_message"/>
+    <ImageView style="?attr/dividerHorizontalStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/user_full_name" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/user_profile_name" style="?attr/listItemLabeledStyle"/>
+    <ImageView style="?attr/dividerHorizontalStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/user_email" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/user_profile_email" style="?attr/listItemLabeledStyle"/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <Button android:layout_gravity="center_horizontal" android:id="@+id/disconnect_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="@string/user_account_disconnect" style="?attr/borderlessButtonStyle"/>
+</LinearLayout>

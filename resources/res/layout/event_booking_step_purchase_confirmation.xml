@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:background="?attr/colorSurfaceVariant" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/arrival_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="@dimen/half_screen_edge" android:text="@string/event_booking_direction_to_event"/>
+        <com.moovit.app.ridesharing.view.EventBookingTicketView android:id="@+id/arrival_ticket" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/half_screen_edge" android:layout_marginRight="@dimen/half_screen_edge" app:cardCornerRadius="@dimen/corner_radius"/>
+        <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/return_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="@dimen/half_screen_edge" android:text="@string/event_booking_direction_from_event"/>
+        <com.moovit.app.ridesharing.view.EventBookingTicketView android:id="@+id/return_ticket" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/half_screen_edge" android:layout_marginRight="@dimen/half_screen_edge" app:cardCornerRadius="@dimen/corner_radius"/>
+        <Space android:layout_width="match_parent" android:layout_height="20dp"/>
+        <include android:id="@+id/purchase_summery" layout="@layout/event_booking_step_purchase_confirmation_total"/>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="20dp" android:layout_weight="1"/>
+        <FrameLayout android:background="?attr/colorSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_2">
+            <Button android:id="@+id/confirm_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="10dp" android:text="@string/confirm_purchase_key"/>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

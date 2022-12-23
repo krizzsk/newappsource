@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroller" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/carpool_add_credit_card_header"/>
+            <Space android:layout_width="match_parent" android:layout_height="20dp"/>
+            <TextView android:textAppearance="?attr/textAppearanceHeadline5" android:textColor="?attr/colorOnSurface" android:gravity="center" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/carpool_credit_card_title" android:textAlignment="center"/>
+            <Space android:layout_width="match_parent" android:layout_height="8dp"/>
+            <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:gravity="center" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carpool_credit_card_description" android:textAlignment="center"/>
+            <Space android:layout_width="match_parent" android:layout_height="10dp"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/credit_card_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:hint="@string/carpool_enter_credit_card_hint" app:endIconDrawable="@drawable/img_credit_cards" app:endIconMode="-1" app:endIconTint="@null" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:imeOptions="actionNext"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp">
+                <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textSize="12sp" android:textStyle="normal" android:textColor="?attr/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credit_card_expiration_label"/>
+                <Space android:layout_width="0dp" android:layout_height="4dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Spinner android:layout_gravity="center_vertical" android:id="@+id/month" android:background="@drawable/spinner_underscore" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <Spinner android:layout_gravity="center_vertical" android:id="@+id/year" android:background="@drawable/spinner_underscore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+                </LinearLayout>
+                <Space android:layout_width="match_parent" android:layout_height="6dp"/>
+                <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textStyle="normal" android:textColor="?attr/colorError" android:id="@+id/expirationDateError" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credit_card_expiration_error"/>
+            </LinearLayout>
+            <Space android:layout_width="match_parent" android:layout_height="6dp"/>
+            <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center_vertical" android:id="@+id/cvv_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:hint="@string/carpool_enter_cvv" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:imeOptions="actionNext"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/email_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:hint="@string/carpool_enter_email_hint" app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:imeOptions="actionSend"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/latam_extention" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/card_holder_name_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:hint="@string/bank_account_full_name_label" app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/card_holder_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="actionNext"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/identity_document_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:hint="@string/bank_account_id_number_label" app:errorEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/identity_document" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="actionDone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/dock_container" android:background="?attr/colorSurface" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+        <ImageView android:id="@+id/dock_shadow" android:background="@drawable/shadow_top_4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+        <Button android:id="@+id/save_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="2dp" android:layout_marginRight="@dimen/screen_edge" android:text="@string/save"/>
+    </LinearLayout>
+</LinearLayout>

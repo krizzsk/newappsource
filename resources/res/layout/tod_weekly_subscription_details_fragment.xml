@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" app:layout_constraintBottom_toTopOf="@+id/button_container" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:id="@+id/order_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginStart="@dimen/screen_edge" android:layout_marginEnd="@dimen/screen_edge"/>
+            <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_pickup_24_on_surface_emphasis_high" android:id="@+id/pickup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_screen_edge" app:title="@string/tod_shuttle_confirmation_pickup_label" style="?attr/listItemLabeledStyle"/>
+            <ImageView style="?attr/dividerHorizontalStyle"/>
+            <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_dropoff_24_on_surface_emphasis_high" android:id="@+id/drop_off" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tod_shuttle_confirmation_dropoff_label" style="?attr/listItemLabeledStyle"/>
+            <ImageView style="?attr/dividerHorizontalStyle"/>
+            <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_recurring_24_on_surface" android:id="@+id/subscription" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tod_passenger_rides_center_recurring_title" style="?attr/listItemLabeledStyle"/>
+            <ImageView style="?attr/dividerHorizontalStyle"/>
+            <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_passengers_24_on_surface_high" android:id="@+id/passengers" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tod_passenger_order_setting_passengers"/>
+            <ImageView style="?attr/dividerHorizontalStyle"/>
+            <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_credit_card_24_on_surface_emphasis_high" android:id="@+id/ride_fare" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tod_passenger_ride_details_ride_fare"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@+id/button_container" android:background="?attr/colorSurface" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/screen_edge" android:paddingStart="@dimen/screen_edge" android:paddingEnd="@dimen/screen_edge" android:elevation="@dimen/elevation_5" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/scroll_view">
+        <Button android:id="@+id/cancel_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_cancel"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

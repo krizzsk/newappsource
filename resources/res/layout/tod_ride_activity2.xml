@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:id="@+id/map_fragment" android:layout_width="match_parent" android:layout_height="match_parent" app:mapBottomShadow="false" app:mapTopShadow="false" app:mapViewHeightCoef="1.3" class="com.moovit.map.MapFragment"/>
+    <com.moovit.app.tod.bottomsheet.TodRideBottomSheet android:id="@+id/tod_ride_bottom_sheet" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_2" app:layout_behavior="@string/bottom_sheet_behavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

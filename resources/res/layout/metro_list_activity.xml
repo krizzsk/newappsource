@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp" layout="@layout/metro_list_empty_view"/>
+    <ListView android:id="@+id/search_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@drawable/divider_horizontal" android:choiceMode="singleChoice"/>
+    <ExpandableListView android:id="@+id/countries_list" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:groupIndicator="@null" android:childDivider="@drawable/divider_horizontal" android:divider="@drawable/divider_horizontal_full" android:choiceMode="singleChoice"/>
+</FrameLayout>

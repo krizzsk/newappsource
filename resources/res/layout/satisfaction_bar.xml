@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/satisfaction_bar" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/satisfaction_bar_face"/>
+    <include layout="@layout/satisfaction_bar_space"/>
+    <include layout="@layout/satisfaction_bar_face"/>
+    <include layout="@layout/satisfaction_bar_space"/>
+    <include layout="@layout/satisfaction_bar_face"/>
+    <include layout="@layout/satisfaction_bar_space"/>
+    <include layout="@layout/satisfaction_bar_face"/>
+    <include layout="@layout/satisfaction_bar_space"/>
+    <include layout="@layout/satisfaction_bar_face"/>
+</LinearLayout>

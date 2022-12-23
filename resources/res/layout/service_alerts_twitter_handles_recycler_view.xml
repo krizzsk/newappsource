@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorSurfaceVariant" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp" android:importantForAccessibility="no">
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+</FrameLayout>

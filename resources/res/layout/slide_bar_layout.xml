@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.app.reports.service.ReportBarView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/report_bar" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="108dp"/>

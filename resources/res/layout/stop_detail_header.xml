@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Moovit.Dark" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:background="?attr/colorSurface" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textAppearance="?attr/textAppearanceHeadline5" android:textColor="?attr/colorOnSurface" android:ellipsize="end" android:id="@+id/stop_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:maxLines="2" android:lineSpacingMultiplier="1"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <com.moovit.commons.view.FormatTextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurface" android:id="@+id/stop_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:format="@string/android_stop_id"/>
+            <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurface" android:id="@+id/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_list_delimiter_dot"/>
+            <ImageView android:id="@+id/accessibility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/accessibility_station" app:srcCompat="@drawable/ic_wheelchair_16_on_surface"/>
+        </LinearLayout>
+        <Space android:id="@+id/time_picker_spacer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="18dp"/>
+        <TextView android:textAppearance="?attr/textAppearanceBodySmallStrong" android:textColor="?attr/colorPrimary" android:id="@+id/time_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="50dp" style="?attr/spinnerStyle"/>
+    </LinearLayout>
+    <Space android:layout_width="11dp" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/thumbnail" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" android:cropToPadding="true" android:transitionName="image"/>
+</LinearLayout>

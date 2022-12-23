@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/stop_details_menu">
+    <item android:icon="@drawable/ic_map_24_control_normal" android:id="@+id/action_map" android:title="@string/action_map" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_from_24_control_normal" android:id="@+id/directions_from_here" android:title="@string/choose_map_from_here" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_to_24_control_normal" android:id="@+id/direction_to_here" android:title="@string/choose_map_to_here" app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="?attr/colorSurfaceInfoVariant" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_screen_edge" android:layout_marginBottom="4dp" android:paddingStart="@dimen/half_screen_edge" android:paddingEnd="@dimen/half_screen_edge"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/bg_oval_corners" android:layout_width="wrap_content" android:layout_height="28dp" android:backgroundTint="?attr/colorSurface">
+        <p648me.relex.circleindicator.CircleIndicator3 android:layout_gravity="center_vertical" android:id="@+id/dot_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/half_screen_edge" app:ci_animator="@animator/dot_indicator_animator" app:ci_drawable="@drawable/ic_circle_on_surface" app:ci_height="8dp" app:ci_margin="4dp" app:ci_width="8dp"/>
+        <Button android:id="@+id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@drawable/ic_refresh_16" style="?attr/iconButtonSlimStyle"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:alpha="0.1" app:tint="?attr/colorOnSurface" style="?attr/dividerHorizontalFullStyle"/>
+</LinearLayout>

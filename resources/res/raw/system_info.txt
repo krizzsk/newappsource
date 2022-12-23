@@ -1,0 +1,133 @@
+User:
+=====
+	User id: %1$s
+	User name: %2$s
+	App version: %3$s
+	Login method: %67$s
+	Origin: %68$s
+	Customer id: %70$s
+	Application id: %71$s
+
+Metro:
+=====
+	Metro id: %4$s
+	Metro name: %5$s
+	Metro transit types: %6$s
+	Country id: %61$s
+	Country name: %62$s
+	Metro language key: %69$s
+
+
+Locale:
+=====
+	Language name: %7$s
+	Language key: %8$s
+	Country key: %9$s
+	Variant key: %10$s
+	
+	
+System:
+=====
+	Model: %11$s
+	Manufacturer: %12$s
+    OS type: %13$s
+    OS version: %14$s
+	Display name: %15$s
+	Device name: %16$s
+	
+	
+Time zone:
+=====
+	Time zone id: %17$s
+	Time zone name: %18$s
+	Time zone offset: %19$s
+	Time zone DST: %20$s
+	Local time: %21$s
+
+
+Trip plan preferences:
+=====
+	Default route type: %22$s
+	Default transit types: %23$s
+
+
+Location services: 
+=====
+	Last known location: %24$s
+	Providers: %25$s
+	Available providers: %26$s
+	GPS satellites: %27$s
+	Location services permission: %55$s
+	Location accuracy: %59$s
+
+
+Notification settings:
+=====
+	Push token exists: %60$s
+	User delivery schedule: %63$s
+	Push notification news and update: %64$s
+	Push notification my favorites: %65$s
+	Push notification service alert: %66$s
+
+
+Telephony:
+=====
+	Carrier: %28$s
+
+
+Connectivity:
+=====
+	WiFi connected: %36$s
+	Active network name: %29$s
+	Mobile data supported: %30$s
+	Mobile data enabled: %31$s
+	Mobile data connected: %32$s
+	Mobile roaming: %33$s
+	WiFi supported: %34$s
+	WiFi enabled: %35$s
+
+
+Screen:
+=====
+	Resolution: %37$s
+	Density dpi: %38$s
+	Density float: %39$s
+	xdpi: %40$s
+	ydpi: %41$s
+
+
+Memory:
+=====
+	Total: %42$s
+	Available: %43$s
+	Is low: %44$s
+
+
+Runtime (process):
+=====
+	Max: %45$s
+	Total: %46$s
+	Free: %47$s
+	Busy: %48$s
+	Processor cores: %49$s
+	
+	
+Internal file system:
+=====
+	Total: %50$s
+	Available: %51$s
+	Documents: %56$s
+	Cache: %57$s
+	App Sandbox: %58$s
+	
+	
+External file system:
+=====
+	Total: %52$s
+	Available: %53$s
+
+
+Battery:
+=====
+	Percentage: %54$s
+

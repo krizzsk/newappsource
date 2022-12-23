@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_rounded_corners_stroke_1" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:backgroundTint="?attr/colorOnSurfaceEmphasisLow">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/start" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/position_start" style="?attr/listItemLabeledStyle"/>
+    <ImageView style="?attr/dividerHorizontalStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/end" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/position_end" style="?attr/listItemLabeledStyle"/>
+    <ImageView style="?attr/dividerHorizontalStyle"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.moovit.design.view.list.ListItemView android:id="@+id/date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5" app:title="@string/ride_schedule_date_label" style="?attr/listItemLabeledStyle"/>
+        <com.moovit.design.view.list.ListItemView android:id="@+id/pickup_range" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5" app:title="@string/carpool_passenger_pickup_range_label" style="?attr/listItemLabeledStyle"/>
+    </LinearLayout>
+    <ImageView style="?attr/dividerHorizontalStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/max_walking_time" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/carpool_passenger_total_walking_time_label" style="?attr/listItemLabeledStyle"/>
+    <ImageView style="?attr/dividerHorizontalFullStyle"/>
+    <com.moovit.design.view.list.ListItemView android:background="@drawable/bg_bottom_corners_rounded" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="1px" android:layout_marginRight="1px" android:layout_marginBottom="1px" android:backgroundTint="?attr/colorSurfaceVariant" app:title="@string/carpool_passenger_price_label" style="?attr/listItemLabeledStyle">
+        <FrameLayout android:tag="accessory" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Moovit.ListItem.Accessory.Text"/>
+            <ProgressBar android:id="@+id/price_progress_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+        </FrameLayout>
+    </com.moovit.design.view.list.ListItemView>
+</LinearLayout>

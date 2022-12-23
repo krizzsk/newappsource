@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:elevation="0dp" app:layout_constraintBottom_toTopOf="@+id/container" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <FrameLayout android:id="@+id/container" android:background="?attr/colorSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:foregroundGravity="center" android:elevation="12dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/recycler_view">
+        <Button android:layout_gravity="center" android:id="@+id/buy_new_ticket_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" android:text="@string/tickets_center_action_buy_fare_product" android:layout_marginStart="@dimen/screen_edge" android:layout_marginEnd="@dimen/screen_edge"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/autofill_accessory_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentTop="true" style="@style/BtnAutofillAccessoryView.Divider"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/autofill_accessory_close_image" android:layout_below="@+id/autofill_accessory_divider" android:layout_marginEnd="4dp" android:layout_alignParentStart="true">
+        <androidx.cardview.widget.CardView android:id="@+id/autofill_accessory_card_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36dp" style="@style/BtnAutofillAccessoryView.Card">
+            <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/autofill_accessory_icon_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                <TextView android:id="@+id/autofill_accessory_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp" style="@style/BtnAutofillAccessoryView.Text.Primary"/>
+                <TextView android:id="@+id/autofill_accessory_secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BtnAutofillAccessoryView.Text.Secondary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <ImageView android:id="@+id/autofill_accessory_close_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_ic_autofill_action_clear" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

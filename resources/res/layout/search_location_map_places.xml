@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.moovit.commons.view.FormatTextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurfaceEmphasisLow" android:layout_gravity="center_horizontal" android:id="@+id/slider_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:format="@string/slider_indication" style="?attr/textViewCenteredStyle"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="65dp">
+        <com.moovit.commons.view.pager.ViewPager android:id="@+id/places" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ImageView android:layout_marginTop="7dp" style="?attr/dividerHorizontalFullStyle"/>
+    <Button android:enabled="false" android:id="@+id/done" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="10dp" android:text="@string/ok"/>
+</merge>

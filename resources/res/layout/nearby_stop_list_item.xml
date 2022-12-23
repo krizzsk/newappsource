@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/screen_edge" android:paddingTop="18dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="18dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="108dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+        <ImageView android:layout_gravity="start" android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginTop="8dp" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_marginEnd="8dp"/>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/image_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_star_16_favorite"/>
+    </FrameLayout>
+    <TextView android:textAppearance="?attr/textAppearanceHeadline6" android:textColor="?attr/colorOnSurface" android:ellipsize="end" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+    <com.moovit.design.view.ImagesOrTextsView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:id="@+id/metadata" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:lineSpacingMultiplier="1" app:uniquifyImages="true"/>
+</LinearLayout>

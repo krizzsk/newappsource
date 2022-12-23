@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_vertical_full" android:showDividers="middle">
+    <Button android:theme="@style/ThemeOverlay.Moovit.Button.TextButton.OnSurface" android:id="@+id/action_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no" style="@style/Widget.Moovit.ListItem.Accessory.TextButton"/>
+    <Button android:theme="@style/ThemeOverlay.Moovit.Button.TextButton.OnSurface" android:id="@+id/action_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" style="@style/Widget.Moovit.ListItem.Accessory.TextButton"/>
+</LinearLayout>

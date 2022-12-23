@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_rounded_corners" android:paddingLeft="@dimen/screen_edge" android:paddingTop="24dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="?attr/colorSurface">
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:hint="@string/carpool_booking_survey_hint">
+        <com.google.android.material.textfield.TextInputEditText android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/carpoolSurvey" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp" android:maxLines="10"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button android:enabled="false" android:id="@+id/submit" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_submit"/>
+</LinearLayout>

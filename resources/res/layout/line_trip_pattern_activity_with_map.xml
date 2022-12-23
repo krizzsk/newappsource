@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/line_trip_pattern_activity_header"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <fragment android:id="@+id/map_fragment" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:enabledFollowModes="0" app:followMode="0" app:mapBottomShadow="false" app:mapPaddingBottom="150dp" app:mapTopShadow="false" app:mapViewHeightCoef="1.3" class="com.moovit.map.MapFragment"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_peekHeight="150dp" app:layout_behavior="@string/bottom_sheet_behavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.fragment.app.FragmentContainerView android:name="com.moovit.app.ads.MoovitAnchoredBannerAdFragment" android:id="@+id/banner_ad_fragment" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:id="@+id/quick_actions_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/quick_actions_template"/>
+</LinearLayout>

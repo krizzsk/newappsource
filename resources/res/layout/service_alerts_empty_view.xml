@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.design.view.AlertMessageView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:icon="@drawable/img_empty_state_service_alerts" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="match_parent" android:subtitle="@string/service_alerts_none_subtitle" app:title="@string/service_alerts_none_title"/>

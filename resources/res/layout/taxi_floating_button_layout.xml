@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.moovit.app.taxi.MVViewFlipper android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/flipper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureAllChildren="true"/>
+</merge>

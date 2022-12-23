@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:clickable="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnStatus" android:gravity="center" android:id="@+id/status_alert" android:background="?attr/colorProblem" android:padding="11dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp" android:text="@string/edit_stop_overview_activity_pending_changes_message" android:textAlignment="center"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/gone_switch" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/gone_switch_divider" android:layout_marginBottom="22dp" style="?attr/dividerHorizontalStyle"/>
+                <include layout="@layout/edit_entity_name_layout"/>
+                <include layout="@layout/edit_entity_location_layout"/>
+                <ImageView android:layout_marginTop="11dp" android:layout_marginBottom="11dp" style="?attr/dividerHorizontalStyle"/>
+                <FrameLayout android:id="@+id/extra_view_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <include layout="@layout/edit_entity_gallery_layout"/>
+                <ImageView android:layout_marginTop="11dp" android:layout_marginBottom="11dp" style="?attr/dividerHorizontalStyle"/>
+                <include layout="@layout/edit_entity_more_info_layout"/>
+            </LinearLayout>
+            <View android:id="@+id/blocker" android:background="@color/black_alpha_60" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

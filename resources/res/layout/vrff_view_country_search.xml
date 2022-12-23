@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/country_search_container" android:padding="@dimen/vrff_margin_l" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_s" app:layout_constraintEnd_toEndOf="@+id/end_guide" app:layout_constraintStart_toStartOf="@+id/start_guide" app:layout_constraintTop_toBottomOf="@+id/country_instruction">
+        <EditText android:id="@+id/country_search" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:imeOptions="actionDone"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/country_search_icon" android:layout_width="16sp" android:layout_height="16sp" android:src="@drawable/vrff_ic_search" android:importantForAccessibility="no"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/country_search_clear_icon" android:visibility="gone" android:layout_width="16sp" android:layout_height="16sp" android:src="@drawable/vrff_ic_close"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/country_recycler_container" android:layout_width="0px" android:layout_height="0px" android:layout_marginTop="@dimen/vrff_margin_s" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="@+id/end_guide" app:layout_constraintStart_toStartOf="@+id/start_guide" app:layout_constraintTop_toBottomOf="@+id/country_search_container">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/country_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:showDividers="middle"/>
+    </FrameLayout>
+</merge>

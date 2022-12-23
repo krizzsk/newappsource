@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/time_container" android:background="@drawable/selectable_bg_surface" android:paddingLeft="22dp" android:paddingTop="7dp" android:paddingRight="22dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp" android:backgroundTint="?attr/colorPrimary">
+    <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnPrimary" android:layout_gravity="center_vertical" android:id="@+id/time" android:layout_width="0dp" android:layout_height="wrap_content" android:drawablePadding="0dp" android:layout_weight="1"/>
+    <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?attr/textAppearanceCaptionStrong" android:textColor="?attr/colorOnPrimary" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tripplan_itinerary_search_again" android:textAllCaps="true"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.card.MaterialCardView android:id="@+id/card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/half_screen_edge">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="206dp">
+            <TextView android:textAppearance="?attr/textAppearanceCaptionStrong" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:gravity="center_vertical" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="12dp" android:layout_marginRight="@dimen/screen_edge" android:maxLines="1" android:layout_marginHorizontal="@dimen/screen_edge"/>
+            <ImageView android:id="@+id/divider1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" style="?attr/dividerHorizontalFullStyle"/>
+            <com.moovit.design.view.list.ListItemView android:id="@+id/line_view" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="4dp" app:subtitleTextAppearance="?attr/textAppearanceCaption" app:subtitleTextColor="?attr/colorPrimary" app:titleTextAppearance="?attr/textAppearanceBodyStrong" app:titleTextColor="?attr/colorOnSurface"/>
+            <ImageView android:id="@+id/divider2" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/dividerHorizontalStyle"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

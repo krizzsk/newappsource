@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:statusBarBackground="?attr/colorSurfaceDark">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetEnd="0dp" app:contentInsetEndWithActions="0dp" app:contentInsetLeft="0dp" app:contentInsetRight="0dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" style="@style/Widget.Moovit.Toolbar.Light.Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <fragment android:id="@+id/map_fragment" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:defaultZoom="17.5" app:followMode="1" app:mapBottomShadow="false" app:mapTopShadow="false" class="com.moovit.map.MapFragment"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/MoovitTheme" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:id="@+id/line_row" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItemWidgetNarrow">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:paddingTop="8dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_marginEnd="8dp"/>
+            <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/image_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:src="@drawable/ic_star_16_favorite"/>
+        </FrameLayout>
+        <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" android:paddingStart="8dp"/>
+    </LinearLayout>
+    <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/subtitle" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart"/>
+    <FrameLayout android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureAllChildren="true">
+        <TextView android:textColor="?attr/colorOnSurface" android:id="@+id/accessory" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textColor="?attr/colorLive" android:id="@+id/accessory_rt" android:background="@drawable/anim_real_time_26_3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

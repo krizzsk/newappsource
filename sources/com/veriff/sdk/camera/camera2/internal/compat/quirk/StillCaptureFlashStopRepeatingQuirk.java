@@ -1,0 +1,16 @@
+package com.veriff.sdk.camera.camera2.internal.compat.quirk;
+
+import android.os.Build;
+import com.veriff.sdk.camera.core.impl.Quirk;
+import java.util.Locale;
+
+public class StillCaptureFlashStopRepeatingQuirk implements Quirk {
+    public static boolean load() {
+        String str = Build.MANUFACTURER;
+        Locale locale = Locale.US;
+        if (!"SAMSUNG".equals(str.toUpperCase(locale)) || !Build.MODEL.toUpperCase(locale).startsWith("SM-A716")) {
+            return false;
+        }
+        return true;
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/listItemSectionHeaderLargeStyle"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/divider_horizontal"/>
+    <com.moovit.commons.view.pager.ViewPager android:id="@+id/reports_view_pager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginBottom="22dp"/>
+    <ImageView android:id="@+id/reports_view_pager_indicator_divider" android:visibility="gone" style="?attr/dividerHorizontalFullStyle"/>
+    <RadioGroup android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/reports_view_pager_indicator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="47dp" android:layoutDirection="ltr"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/profile_section" android:layout_width="match_parent" android:layout_height="wrap_content" app:accessoryIgnoreHorizontalPadding="true" app:accessoryLayout="@layout/section_header_accessory_text_button" app:accessoryText="@string/action_edit" app:title="@string/edit_profile_title" style="?attr/listItemSectionHeaderStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/name" style="?attr/listItemLabeledStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/user_profile_email" style="?attr/listItemLabeledStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/phone_number" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/user_profile_phone_number" style="?attr/listItemLabeledStyle"/>
+    <com.moovit.design.view.list.ListItemView android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/carpool_credit_card_title" style="?attr/listItemSectionHeaderStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/credit_card" android:layout_width="match_parent" android:layout_height="wrap_content" app:accessoryLayout="@layout/list_item_accessory_text_button" app:accessoryText="@string/action_change"/>
+</LinearLayout>

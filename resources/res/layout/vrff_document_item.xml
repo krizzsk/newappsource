@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/vrff_size_64" android:foreground="?attr/selectableItemBackground" android:layout_weight="1">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/vrff_margin_24" android:layout_marginEnd="@dimen/vrff_margin_24">
+        <com.veriff.views.VeriffTextView android:textStyle="bold" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/identification_method_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:vrff_text_color="2" style="@style/vrffTextView.text"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/identification_method_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vrff_ic_id" android:importantForAccessibility="no" android:layout_marginStart="@dimen/vrff_margin_s"/>
+    </LinearLayout>
+    <View android:background="@color/vrffDivider" android:layout_width="match_parent" android:layout_height="@dimen/vrff_identification_method_separator_height" android:alpha="0.5"/>
+</LinearLayout>

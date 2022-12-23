@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:layout_gravity="center_horizontal" android:id="@+id/title" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Space android:layout_width="match_parent" android:layout_height="16dp"/>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/text_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" android:imeOptions="actionSend"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <FrameLayout android:id="@+id/extra_views_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-32dp"/>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:layout_gravity="center_horizontal" android:id="@+id/eula_link" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:layout_marginStart="@dimen/screen_edge" android:layout_marginEnd="@dimen/screen_edge" style="?attr/textViewCenteredStyle"/>
+    <Button android:theme="@style/ThemeOverlay.Moovit.Button.Tertiary" android:enabled="false" android:id="@+id/continue_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/carpool_registration_phone_number_continue_button" android:layout_marginStart="@dimen/screen_edge" android:layout_marginEnd="@dimen/screen_edge"/>
+</LinearLayout>

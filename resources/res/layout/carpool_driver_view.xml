@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/profile_picture" android:layout_width="56dp" android:layout_height="56dp" android:transitionName="profileImage"/>
+        <Space android:layout_width="18dp" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1dp"/>
+            <Space android:layout_width="wrap_content" android:layout_height="5dp"/>
+            <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:id="@+id/new_driver_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:layout_marginBottom="5dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/rating_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginStart="-2dp">
+                <RatingBar android:id="@+id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:isIndicator="true" style="?attr/ratingBarStyleSmall"/>
+                <Space android:layout_width="2dp" android:layout_height="wrap_content"/>
+                <com.moovit.commons.view.FormatTextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:id="@+id/num_ratings" android:layout_width="wrap_content" android:layout_height="wrap_content" app:format="@string/carpool_ride_details_driver_profile_num_ratings"/>
+            </LinearLayout>
+            <Button android:id="@+id/view_profile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carpool_ride_details_driver_profile_view" style="?attr/outlinedButtonSlimStyle"/>
+        </LinearLayout>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="end" android:id="@+id/contact" android:background="@drawable/ride_details_contact_driver" android:paddingTop="4dp" android:layout_width="36dp" android:layout_height="36dp" android:foreground="?attr/selectableItemBackground" android:scaleType="center" app:srcCompat="@drawable/ic_message_16_on_tertiary"/>
+    </LinearLayout>
+    <Space android:layout_width="0dp" android:layout_height="26dp"/>
+    <include layout="@layout/carpool_driver_view_confirmation_layout"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="250dp">
+    <LinearLayout android:theme="@style/ThemeOverlay.Moovit.Dark" android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_map_bubble_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/pathway_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp"/>
+            <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisLow" android:id="@+id/stop_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView android:theme="@style/ThemeOverlay.Moovit.Dark" android:id="@+id/edit" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" app:srcCompat="@drawable/ic_edit_16_on_surface"/>
+    </LinearLayout>
+    <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurface" android:id="@+id/pathway_name" android:background="@drawable/bg_map_bubble_bottom" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

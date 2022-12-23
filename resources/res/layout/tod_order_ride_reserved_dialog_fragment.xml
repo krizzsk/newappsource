@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="24dp" android:paddingTop="40dp" android:paddingRight="24dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" app:srcCompat="@drawable/ic_check_mark_circ_56_good"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/tod_passenger_order_reserved_successfully_title" style="?attr/dialogTitleStyle"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="@string/tod_passenger_order_reserved_successfully_subtitle" style="?attr/dialogMessageStyle"/>
+    <Button android:id="@+id/dismiss_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_dismiss" style="?attr/dialogPositiveButtonStyle"/>
+</LinearLayout>

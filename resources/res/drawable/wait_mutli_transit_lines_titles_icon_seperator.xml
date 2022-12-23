@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fromDegrees="-70" android:toDegrees="-70" android:pivotX="50%" android:pivotY="50%">
+    <shape android:shape="line">
+        <stroke android:width="1dp" android:color="?attr/colorOnSurfaceEmphasisMedium"/>
+        <size android:height="16dp" android:width="16dp"/>
+        <padding android:top="2dp" android:bottom="2dp"/>
+    </shape>
+</rotate>

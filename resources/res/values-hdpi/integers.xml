@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="map_tile_zoom_level_bias">20</integer>
+    <integer name="screen_density_bucket">240</integer>
+</resources>

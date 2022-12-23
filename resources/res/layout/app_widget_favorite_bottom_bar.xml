@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/MoovitTheme" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FavoritesWidgetBottomBar">
+    <TextView android:id="@+id/favorite_widget_home" android:background="@drawable/app_widget_favorite_home_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dashboard_favorites_home" android:drawableTop="@drawable/ic_home_24_on_surface_emphasis_low" android:layout_weight="1" style="@style/FavoritesWidgetBottomBarButton"/>
+    <TextView android:id="@+id/favorite_widget_work" android:background="@drawable/app_widget_favorite_work_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dashboard_favorites_work" android:drawableTop="@drawable/ic_work_24_on_surface_emphasis_low" android:layout_weight="1" style="@style/FavoritesWidgetBottomBarButton"/>
+</LinearLayout>

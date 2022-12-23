@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <fragment android:name="com.moovit.payment.account.personalinfo.PaymentAccountPersonalInfoFragment" android:id="@+id/personal_info_fragment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/half_screen_edge"/>
+        <include android:id="@+id/empty_account_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="36dp" layout="@layout/payment_account_empty_view"/>
+        <fragment android:name="com.moovit.payment.account.external.ExternalPaymentAccountsFragment" android:id="@+id/account_external_payment_accounts" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <fragment android:name="com.moovit.payment.account.profile.PaymentAccountProfilesFragment" android:id="@+id/account_profiles_fragment" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <fragment android:name="com.moovit.payment.account.paymentmethod.PaymentAccountPaymentMethodsFragment" android:id="@+id/account_credit_cards_fragment" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <fragment android:name="com.moovit.payment.account.certificate.PaymentAccountCertificatesFragment" android:id="@+id/account_certificates_fragment" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

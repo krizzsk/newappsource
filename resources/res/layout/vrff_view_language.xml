@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/language_appbar" android:layout_width="match_parent" android:layout_height="140dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/language_collapsingToolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:collapsedTitleGravity="1" app:expandedTitleTextAppearance="@style/vrffExpToolbarTitle" app:layout_scrollFlags="3">
+            <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/language_logo" android:layout_width="108dp" android:layout_height="30dp" android:layout_marginTop="10dp" android:src="@drawable/vrff_ic_veriff" android:scaleType="centerInside" android:importantForAccessibility="no" app:layout_collapseMode="2"/>
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/language_toolbar" android:layout_width="wrap_content" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1">
+                <View android:layout_gravity="start" android:layout_width="64dp" android:layout_height="match_parent" android:adjustViewBounds="true"/>
+                <ImageView android:layout_gravity="end" android:id="@+id/language_close" android:background="?attr/selectableItemBackground" android:padding="@dimen/vrff_margin_l" android:layout_width="@dimen/vrff_size_56" android:layout_height="@dimen/vrff_size_56" android:src="@drawable/vrff_ic_close" android:adjustViewBounds="true"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/language_recyclerview" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/language_appbar" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <include layout="@layout/vrff_loading"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

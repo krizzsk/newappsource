@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/provider_details" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_trip_24_on_surface_emphasis_high" android:id="@+id/trip" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/listItemLabeledStyle"/>
+    <TextView android:id="@+id/passenger_count" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawableStartCompat="@drawable/ic_person_24_on_surfae_emphasis_high" style="?attr/textViewListItemStyle"/>
+    <TextView android:id="@+id/accessible" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawableStartCompat="@drawable/ic_accessible_24_on_surface_emphasis_high" style="?attr/textViewListItemStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_credit_card_24_on_surface_emphasis_high" android:id="@+id/ride_fare" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tod_passenger_ride_details_ride_fare">
+        <com.moovit.view.PriceView android:tag="accessory" android:layout_width="wrap_content" android:layout_height="wrap_content" app:freeColor="?attr/colorOnSurface" app:freeText="@string/tod_passenger_free_ride" app:priceTextAppearance="?attr/textAppearanceBodyStrong" app:priceTextColor="?attr/colorOnSurface"/>
+    </com.moovit.design.view.list.ListItemView>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_star_hollow_24_on_surface_emphasis_high" android:id="@+id/ride_rating" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tod_passenger_rides_details_rated">
+        <RatingBar android:tag="accessory" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/ratingBarStyleSmall"/>
+    </com.moovit.design.view.list.ListItemView>
+</merge>

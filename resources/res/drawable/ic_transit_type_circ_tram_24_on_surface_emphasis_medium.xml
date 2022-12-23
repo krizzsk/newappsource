@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="23" android:viewportHeight="23">
+    <path android:fillColor="?attr/colorSurfaceVariant" android:pathData="M11.5 1.001C17.299 1.001 22 5.701 22 11.5 22 17.299 17.299 22 11.501 22 5.701 21.999 1 17.299 1 11.5 1 5.701 5.701 1.001 11.5 1.001Z"/>
+    <path android:fillColor="?attr/colorOnSurfaceEmphasisMedium" android:pathData="M11.418 3.75c1.065 0 2.019 0.487 2.65 1.25l0.309 0C13.703 4.093 12.628 3.5 11.418 3.5l0 0C10.208 3.5 9.133 4.093 8.459 5l0.309 0c0.631 -0.763 1.585 -1.25 2.65 -1.25z"/>
+    <path android:fillColor="?attr/colorOnSurfaceEmphasisMedium" android:pathData="M11.418 3.75C10.353 3.75 9.399 4.237 8.768 5L9.106 5C9.688 4.386 10.508 4 11.419 4 12.33 4 13.15 4.386 13.732 5L14.07 5C13.438 4.237 12.484 3.75 11.418 3.75Z"/>
+    <path android:fillColor="?attr/colorOnSurfaceEmphasisMedium" android:pathData="M11 6.5l1.5 -2 0.5 0 -1.5 2z"/>
+    <path android:fillColor="?attr/colorOnSurfaceEmphasisMedium" android:pathData="M12 6.5l-1.5 -2 -0.5 0 1.5 2z"/>
+    <path android:fillColor="?attr/colorOnSurfaceEmphasisMedium" android:pathData="M9 17.5l-1.5 0 -0.5 2 1.5 0z"/>
+    <path android:fillColor="?attr/colorOnSurfaceEmphasisMedium" android:pathData="M14 17.5l1.5 0 0.5 2 -1.5 0z"/>
+    <path android:fillColor="?attr/colorOnSurfaceEmphasisMedium" android:pathData="M14.5 6l-6 0c-1.105 0 -2 0.895 -2 2l0 6c0 0 0 0.31 0 0.5 0 1.381 2.239 2.5 5 2.5 2.761 0 5 -1.119 5 -2.5 0 -0.19 0 -0.5 0 -0.5l0 -6c0 -1.105 -0.895 -2 -2 -2zM8.25 15C7.836 15 7.5 14.664 7.5 14.25 7.5 13.836 7.836 13.5 8.25 13.5 8.664 13.5 9 13.836 9 14.25 9 14.664 8.664 15 8.25 15Zm6.5 0C14.336 15 14 14.664 14 14.25c0 -0.414 0.336 -0.75 0.75 -0.75 0.414 0 0.75 0.336 0.75 0.75 0 0.414 -0.336 0.75 -0.75 0.75zm0.75 -2.5l-8 0 0 -3.3C7.5 7.985 8.395 7 9.5 7l4 0c1.105 0 2 0.985 2 2.2l0 3.3z"/>
+</vector>

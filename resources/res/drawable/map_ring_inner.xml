@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/map_ring_inner_circle" android:insetLeft="@dimen/map_ring_marker_stroke" android:insetRight="@dimen/map_ring_marker_stroke" android:insetTop="@dimen/map_ring_marker_stroke" android:insetBottom="@dimen/map_ring_marker_stroke"/>

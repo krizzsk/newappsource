@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="center" app:srcCompat="@drawable/ic_bottom_sheet_handle_on_surface_emphasis_low"/>

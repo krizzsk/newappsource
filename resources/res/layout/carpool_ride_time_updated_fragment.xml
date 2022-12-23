@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/screen_edge" android:paddingTop="30dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.moovit.commons.view.FormatTextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:gravity="center_horizontal" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" app:format="@string/carpool_booked_rides_with_time_changes_message"/>
+    <Space android:layout_width="match_parent" android:layout_height="30dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/decline" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/carpool_cancel_booking_button" android:layout_weight="0.5" style="?attr/materialButtonOutlinedStyle"/>
+        <Space android:layout_width="15dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/approve" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/carpool_approve_time_change_button" android:layout_weight="0.5"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.usebutton.sdk.internal.views.OneLineInventoryView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/btn_background_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:padding="@dimen/btn_promo_card_padding" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.usebutton.sdk.internal.views.AssetImageView android:layout_gravity="right" android:id="@+id/inventory_icon" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="fitCenter" android:adjustViewBounds="false"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/inventory_primary" android:paddingLeft="@dimen/btn_promo_card_padding" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" style="@style/BtnCardText"/>
+    </LinearLayout>
+</com.usebutton.sdk.internal.views.OneLineInventoryView>

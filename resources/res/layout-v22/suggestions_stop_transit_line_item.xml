@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.view.TransitLineListItemView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/line" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants" android:paddingHorizontal="@dimen/screen_edge" app:iconStartDecorationMargins="-2dp" style="?attr/transitLineItineraryListItemStyle">
+    <com.moovit.view.ScheduleView android:id="@+id/accessory" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.moovit.view.TransitLineListItemView>

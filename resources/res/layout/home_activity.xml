@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.app.home.HomeDrawerLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/activity_content" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/alert_conditions" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <FrameLayout android:id="@+id/fragments_container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:animateFirstView="false"/>
+            <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/shadow_top_4"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <include android:id="@+id/banner_ad_fragment" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/anchored_banner_ad_container"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/tabs_container" android:background="?attr/colorSurface" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:transitionName="bottomBar"/>
+    </LinearLayout>
+    <fragment android:layout_gravity="start" android:id="@+id/drawer_fragment" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" class="com.moovit.app.general.more.DrawerFragment"/>
+</com.moovit.app.home.HomeDrawerLayout>

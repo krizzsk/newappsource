@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Moovit.Dark" android:gravity="left|center_vertical|center_horizontal|center|start" android:background="?attr/colorSurface" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp">
+    <ProgressBar android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+    <Space android:layout_width="12dp" android:layout_height="match_parent"/>
+    <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/metro_updating_message"/>
+</LinearLayout>

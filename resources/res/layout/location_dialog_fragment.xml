@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_horizontal" android:showDividers="middle">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.moovit.design.view.list.ImageOrTextSubtitleListItemView android:gravity="center" android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <androidx.core.widget.ContentLoadingProgressBar android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/progress_bar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" style="?android:attr/progressBarStyleSmall"/>
+    </FrameLayout>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_to_16_on_surface_emphasis_low" android:id="@+id/action_to" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/choose_map_to_here" style="?attr/listItemMenuStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_from_16_on_surface_emphasis_low" android:id="@+id/action_from" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/choose_map_from_here" style="?attr/listItemMenuStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_favorite_16_on_surface_emphasis_low" android:id="@+id/action_favorite" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/favorite_save_line_button" style="?attr/listItemMenuStyle"/>
+</LinearLayout>

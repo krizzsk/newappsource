@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Moovit.Toolbar.Light.Transparent">
+            <com.moovit.design.view.list.ListItemView android:id="@+id/line_header" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/transitLineHeaderStyle"/>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView android:theme="@style/ThemeOverlay.Moovit.Dark" android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurface" android:gravity="center_vertical" android:id="@+id/time_selected" android:background="?attr/colorSurfaceEmphasisHigh" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="28dp" android:drawablePadding="0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</merge>

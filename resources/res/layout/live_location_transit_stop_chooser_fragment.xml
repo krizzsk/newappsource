@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="16dp" app:srcCompat="@drawable/ic_bottom_sheet_handle_on_surface_emphasis_low"/>
+    <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="@string/live_location_select_station_title" android:layout_marginStart="@dimen/screen_edge" android:layout_marginEnd="@dimen/screen_edge"/>
+    <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/live_location_select_station_subtitle" android:layout_marginStart="@dimen/screen_edge" android:layout_marginEnd="@dimen/screen_edge"/>
+    <ImageView style="?attr/dividerHorizontalFullStyle"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

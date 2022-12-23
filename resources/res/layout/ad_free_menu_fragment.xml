@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="?attr/paymentMenuItemTheme" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/wdg_more_menu_img_ad_free_24" android:id="@+id/ad_free_menu_item" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/more_ad_free" android:contentDescription="@string/voiceover_ad_free_hint" style="?attr/listItemMenuStyle"/>
+</LinearLayout>

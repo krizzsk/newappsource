@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/confirmation_rate" android:paddingTop="24dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:divider="@drawable/divider_vertical_full" android:showDividers="middle">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/response_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+        <Space android:layout_width="0dp" android:layout_height="5dp"/>
+        <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurfaceEmphasisLow" android:id="@+id/response_rate_desc" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/carpool_ride_details_driver_profile_response_rate_label" android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/approval_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+        <Space android:layout_width="0dp" android:layout_height="5dp"/>
+        <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurfaceEmphasisLow" android:id="@+id/approval_rate_desc" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/carpool_ride_details_driver_profile_approval_rate_label" android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/response_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+        <Space android:layout_width="0dp" android:layout_height="5dp"/>
+        <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurfaceEmphasisLow" android:id="@+id/response_time_desc" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/carpool_ride_details_driver_profile_response_time_label" android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

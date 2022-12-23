@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/MoovitTheme" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/widget_no_favorite_stations_title" style="@style/FavoritesWidgetTitleOnly"/>
+    <FrameLayout android:id="@+id/body" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star_16_favorite"/>
+            <TextView android:textAppearance="?attr/textAppearanceBodySmallStrong" android:textColor="?attr/colorOnSurface" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_no_favorite_stations_empty_state" style="?attr/textViewCenteredStyle"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/widget_footer_shadow" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <include layout="@layout/app_widget_favorite_bottom_bar"/>
+</LinearLayout>

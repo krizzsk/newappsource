@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="@dimen/vrff_margin_24" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/reason_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/vrff_margin_20" android:importantForAccessibility="no"/>
+        <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/reason_result_icon" android:layout_width="@dimen/vrff_margin_40" android:layout_height="@dimen/vrff_size_40" android:importantForAccessibility="no"/>
+    </FrameLayout>
+    <com.veriff.views.VeriffTextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/reason_image_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_s" app:vrff_text_color="2"/>
+</LinearLayout>

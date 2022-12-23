@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/install_sheet_background" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.7"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/install_sheet_loading" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.usebutton.sdk.internal.views.ColorProgressBar android:id="@+id/install_sheet_progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="false" style="@style/BtnProgressBar"/>
+        <TextView android:textSize="16sp" android:id="@+id/install_sheet_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/install_sheet_app_icon" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:scaleType="fitCenter"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/install_sheet_app_icon">
+                <TextView android:textSize="16sp" android:ellipsize="end" android:id="@+id/install_sheet_app_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                <TextView android:textSize="14sp" android:ellipsize="end" android:id="@+id/install_sheet_app_subtitle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            </LinearLayout>
+            <Button android:textSize="14sp" android:ellipsize="end" android:id="@+id/install_sheet_button_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:maxLines="1" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="4dp" android:layout_alignParentEnd="true" style="@style/BtnBorderlessButton"/>
+        </RelativeLayout>
+        <Button android:enabled="false" android:textSize="14sp" android:textColor="@color/btn_disabled" android:ellipsize="end" android:id="@+id/install_sheet_button_web" android:background="@color/btn_grey_light" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:maxLines="1" style="@style/BtnBorderlessButton"/>
+    </LinearLayout>
+</RelativeLayout>

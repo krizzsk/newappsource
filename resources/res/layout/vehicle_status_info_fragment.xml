@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" app:srcCompat="@drawable/ic_bottom_sheet_handle_on_surface_emphasis_low"/>
+    <com.moovit.design.view.list.ListItemView android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/live_location_status_title"/>
+    <ImageView style="?attr/dividerHorizontalFullStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_clock_24_good" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/live_location_status_recent" style="?attr/listItemMenuStyle"/>
+    <ImageView style="?attr/dividerHorizontalStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_clock_24_on_surface_emphasis_high" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/live_location_status_awhile" style="?attr/listItemMenuStyle"/>
+    <ImageView style="?attr/dividerHorizontalStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_clock_24_critical" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/live_location_status_no_update" style="?attr/listItemMenuStyle"/>
+    <ImageView style="?attr/dividerHorizontalStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_location_off_24_on_surface" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/live_location_status_no_location" style="?attr/listItemMenuStyle"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null">
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:measureAllChildren="true" android:layout_weight="1">
+        <include layout="@layout/map_location_picker_map"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="?attr/colorSurface" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:elevation="@dimen/elevation_4">
+        <include layout="@layout/search_location_map_places"/>
+    </LinearLayout>
+</LinearLayout>

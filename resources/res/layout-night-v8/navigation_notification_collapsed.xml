@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/MoovitDarkTheme" android:orientation="horizontal" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.9">
+        <ImageView android:id="@+id/notification_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+        <ImageView android:id="@+id/notification_badge" android:background="@drawable/notification_center_badge_dark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:layout_alignBottom="@+id/notification_icon" android:layout_alignEnd="@+id/notification_icon"/>
+        <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:ellipsize="end" android:id="@+id/notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/notification_time" android:layout_toEndOf="@+id/notification_icon"/>
+        <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:id="@+id/notification_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/notification_title" android:layout_alignParentEnd="true"/>
+        <include layout="@layout/navigation_notification_subtitle"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/notification_action_prev" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/notification_action_prev_selector_dark" android:scaleType="center" android:layout_weight="0.1"/>
+    <ImageView android:id="@+id/notification_action_next" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/notification_action_next_selector_dark" android:scaleType="center" android:layout_weight="0.1"/>
+</LinearLayout>

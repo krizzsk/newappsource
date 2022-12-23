@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/event_view" android:visibility="gone" layout="@layout/event_detail_event_layout"/>
+    <include android:id="@+id/ride_view" android:visibility="gone" layout="@layout/event_detail_ride_layout"/>
+    <fragment android:layout_gravity="center" android:id="@+id/map_fragment" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" class="com.moovit.map.MapFragment"/>
+    <FrameLayout android:id="@+id/bottom_view" android:background="?attr/colorSurface" android:paddingLeft="@dimen/screen_edge" android:paddingTop="11dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="11dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_2" app:layout_constraintBottom_toBottomOf="0">
+        <Button android:id="@+id/book_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/event_detail_book_action"/>
+        <Button android:id="@+id/share_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_share" app:icon="@drawable/ic_share_24"/>
+    </FrameLayout>
+</LinearLayout>

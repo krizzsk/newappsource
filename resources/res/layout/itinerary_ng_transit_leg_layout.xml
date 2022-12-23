@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/list_item_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:accessoryLayout="@layout/list_item_accessory_button" app:accessoryText="@string/itinerary_no_group_view_times" style="?attr/transitLineListItemStyle"/>
+    <com.moovit.app.servicealerts.LineServiceAlertDigestView android:id="@+id/service_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="15dp"/>
+    <com.moovit.view.SimpleStopsView android:id="@+id/stops_view" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:fullRadius="@dimen/transit_leg_no_group_stops_radius" app:fullWidth="@dimen/transit_leg_no_group_stops_stroke_size" app:startOffset="70dp"/>
+</merge>

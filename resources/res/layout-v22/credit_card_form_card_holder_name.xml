@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_holder_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/credit_card_holder_name_label" app:errorEnabled="true">
+    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPersonName" android:contentDescription="@string/voiceover_enter_cardholder_name_hint" android:autofillHints="personName" android:importantForAutofill="1"/>
+</com.google.android.material.textfield.TextInputLayout>

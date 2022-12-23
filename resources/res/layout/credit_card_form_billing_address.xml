@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/billing_address_divider" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:layout_marginBottom="24dp" style="?attr/dividerHorizontalFullStyle"/>
+    <TextView android:textAppearance="?attr/textAppearanceBodySmallStrong" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:id="@+id/billing_address_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/payment_billing_address"/>
+    <com.moovit.view.address.AddressInputView android:id="@+id/billing_address" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

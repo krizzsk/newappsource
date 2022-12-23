@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/tos_webview_container" android:background="@color/vrffWhite" android:padding="@dimen/vrff_margin_l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:alpha="0" android:layout_alignParentStart="true">
+    <ImageView android:layout_gravity="end" android:id="@+id/tos_btn_webview_close" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/vrff_margin_l" android:layout_width="@dimen/vrff_size_52" android:layout_height="@dimen/vrff_size_52" android:src="@drawable/vrff_ic_close"/>
+</LinearLayout>

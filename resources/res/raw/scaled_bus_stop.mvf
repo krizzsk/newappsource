@@ -1,0 +1,6 @@
+{
+	"type": "image",
+	"id": "%1$s",
+	"scale": "%2$s",
+	"ext_params_range":"3"
+}

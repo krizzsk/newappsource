@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/item" android:background="@null" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:minHeight="0dp" android:paddingStart="0dp" android:paddingEnd="0dp" android:layout_marginEnd="8dp" app:iconSpacing="4dp" app:subtitleMaxLines="1" app:titleMaxLines="1" app:titleTextAppearance="?attr/textAppearanceBodySmallStrong" app:wrapContent="true"/>
+    <ViewFlipper android:id="@+id/view_flipper" android:layout_width="wrap_content" android:layout_height="match_parent" android:inAnimation="@anim/favorite_flipper_in_anim" android:outAnimation="@anim/favorite_flipper_out_anim" android:flipInterval="4000" android:autoStart="true" android:animateFirstView="false" app:layout_alignSelf="2">
+        <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </ViewFlipper>
+</merge>

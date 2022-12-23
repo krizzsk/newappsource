@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/com_masabi_justride_sdk_universal_ticket_default_padding" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@style/JustRideSDKUniversalTitleTextAppearance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/com_masabi_justride_sdk_universal_ticket_default_padding" android:text="@string/com_masabi_justride_sdk_universal_ticket_details_ticket_trip_title"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/productLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/com_masabi_justride_sdk_universal_ticket_default_padding">
+        <TextView android:id="@+id/productNameTextView" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/JustRideSDKUniversalTicketBodyTextAppearance"/>
+        <TextView android:id="@+id/productPriceTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/com_masabi_justride_sdk_universal_ticket_default_padding" style="@style/JustRideSDKUniversalTicketBodyTextAppearance"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/originLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <TextView android:id="@+id/originNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" style="@style/JustRideSDKUniversalTicketBodyTextAppearance"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/originIconImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foregroundGravity="center" android:rotationX="180" android:rotationY="180"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/destinationLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/destinationIconImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foregroundGravity="center" android:layout_marginEnd="10dp"/>
+        <TextView android:id="@+id/destinationNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/JustRideSDKUniversalTicketBodyTextAppearance"/>
+    </LinearLayout>
+</LinearLayout>

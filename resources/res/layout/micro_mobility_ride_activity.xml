@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/map_fragment" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="14dp" app:navigationIcon="?attr/homeAsUpIndicator" style="@style/Widget.Moovit.Toolbar.Light.Transparent"/>
+        <ImageView android:id="@+id/divider_top" style="?attr/dividerHorizontalFullStyle"/>
+        <com.moovit.design.view.list.ListItemView android:id="@+id/provider_details" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/divider_middle" style="?attr/dividerHorizontalStyle"/>
+        <com.moovit.design.view.list.ListItemView android:id="@+id/time" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/divider_bottom" style="?attr/dividerHorizontalStyle"/>
+        <com.moovit.design.view.list.ListItemView android:id="@+id/price" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?attr/textAppearanceBody" android:id="@+id/instructions" android:padding="@dimen/screen_edge" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <fragment android:id="@+id/map_fragment" android:layout_width="match_parent" android:layout_height="0dp" app:followMode="0" app:layout_constraintBottom_toTopOf="@+id/fragment_container" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/app_bar" class="com.moovit.map.MapFragment"/>
+    <FrameLayout android:id="@+id/fragment_container" android:background="?attr/colorSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_4" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/map_fragment"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

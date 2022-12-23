@@ -1,0 +1,60 @@
+{
+	"type": "container",
+	"stacking_strategy": "horizontal",
+	"spacing_mode": "start|middle|end",
+	"spacing": 4,
+	"ignoreIfEmpty": true,
+	"layout": {
+		"h": 26
+	},
+	"background": {
+		"type": "image",
+		"id": "-18"
+	},
+	"layers": [
+		{
+			"type": "image",
+			"id": "%2$s",
+			"layout": {
+				"h": 18,
+				"x": 0.5,
+				"y": 0.5,
+				"halign": "center",
+				"valign": "center"
+			}
+		},
+		{
+			"type": "image",
+			"id": "%3$s",
+			"layout": {
+				"h": 18,
+				"x": 0.5,
+				"y": 0.5,
+				"halign": "center",
+				"valign": "center"
+			}
+		},
+		{
+			"type": "image",
+			"id": "%4$s",
+			"layout": {
+				"h": 18,
+				"x": 0.5,
+				"y": 0.5,
+				"halign": "center",
+				"valign": "center"
+			}
+		},
+		{
+			"type": "image",
+			"id": "%5$s",
+			"layout": {
+				"h": 18,
+				"x": 0.5,
+				"y": 0.5,
+				"halign": "center",
+				"valign": "center"
+			}
+		}
+	]
+}

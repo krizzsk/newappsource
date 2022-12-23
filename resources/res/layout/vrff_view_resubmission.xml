@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <mobi.lab.veriff.layouts.VeriffToolbar android:id="@+id/resubmission_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/vrff_size_56" app:layout_constraintTop_toTopOf="0"/>
+        <ScrollView android:id="@+id/resubmission_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/resubmission_description">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/vrff_margin_24" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.veriff.views.VeriffTextView android:id="@+id/resubmission_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" style="@style/vrffText.title"/>
+                <com.veriff.views.VeriffTextView android:id="@+id/resubmission_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" android:layout_marginBottom="@dimen/vrff_margin_s" style="@style/vrffText.16"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/resubmission_reasons" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_24" android:layout_marginBottom="@dimen/vrff_margin_l" android:importantForAccessibility="noHideDescendants"/>
+                <mobi.lab.veriff.layouts.VeriffButton android:id="@+id/resubmission_btn_start" android:visibility="visible" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/vrff_button_height" android:layout_marginBottom="@dimen/vrff_margin_24" android:elevation="2dp" app:vrff_button_type="20" app:vrff_button_ui="10"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/reports_list_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/transitLineListItemStyle"/>
+    <com.moovit.commons.view.list.SectionedListView android:id="@+id/reports_sectioned_list_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/banner_ad_fragment" android:layout_below="@+id/reports_list_title" android:headerDividersEnabled="true" android:footerDividersEnabled="true" style="@style/SectionedListView"/>
+    <androidx.fragment.app.FragmentContainerView android:name="com.moovit.app.ads.MoovitAnchoredBannerAdFragment" android:id="@+id/banner_ad_fragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <com.moovit.design.view.ProgressView android:id="@+id/reports_loading_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:layout_centerInParent="true"/>
+</RelativeLayout>

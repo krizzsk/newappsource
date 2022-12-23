@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:paddingEnd="@dimen/com_masabi_justride_sdk_activity_horizontal_margin">
+    <TextView android:id="@+id/ticket_info_item_header" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="6">
+        <TextView android:ellipsize="end" android:id="@+id/ticket_info_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="5dp"/>
+        <TextView android:ellipsize="end" android:id="@+id/ticket_info_item_sub_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+</LinearLayout>

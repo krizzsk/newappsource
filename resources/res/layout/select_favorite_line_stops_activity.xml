@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Moovit.Toolbar.Light.Transparent">
+            <com.moovit.design.view.list.ListItemView android:id="@+id/line_header" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/transitLineHeaderStyle"/>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView android:theme="@style/ThemeOverlay.Moovit.Dark" android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:background="?attr/colorSurface" android:paddingLeft="@dimen/screen_edge" android:paddingTop="13dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/favorite_line_choose_station_header"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/stops_list" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <FrameLayout android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.moovit.design.view.AlertMessageView android:icon="@drawable/img_empty_state_line_view" android:layout_gravity="center" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:subtitle="@string/line_detail_empty_options_selected_time"/>
+    </FrameLayout>
+    <ImageView style="?attr/dividerHorizontalFullStyle"/>
+    <Button android:id="@+id/done" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="10dp" android:text="@string/done"/>
+</LinearLayout>

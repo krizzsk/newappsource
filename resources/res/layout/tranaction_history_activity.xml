@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetEnd="0dp" app:contentInsetEndWithActions="0dp" app:contentInsetLeft="0dp" app:contentInsetRight="0dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" style="@style/Widget.Moovit.Toolbar.Dark"/>
+        <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_calender_24_on_surface_emphasis_low" android:id="@+id/header" android:background="?attr/colorSurface" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:accessoryLayout="@layout/list_item_accessory_button" app:accessoryText="@string/action_change" app:title="@string/month" style="?attr/listItemLabeledStyle"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

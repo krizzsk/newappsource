@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/MoovitTheme" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FavoritesWidgetTopBar">
+        <ImageView android:id="@+id/prev_station" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/app_widget_favorite_prev_ic_selector" style="@style/FavoritesWidgetArrowPrev"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="40dp" android:layout_weight="1">
+            <TextView android:id="@+id/station_label" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/FavoritesWidgetTitle"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/pagination" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" style="@style/FavoritesWidgetPagination"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/next_station" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/app_widget_favorite_next_ic_selector" style="@style/FavoritesWidgetArrowNext"/>
+    </LinearLayout>
+    <include layout="@layout/app_widget_favorite_refresh_widget"/>
+    <FrameLayout android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/divider_horizontal"/>
+        <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/widget_footer_shadow" android:scaleType="fitXY"/>
+        <TextView android:textAppearance="?attr/textAppearanceHeadline5" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stop_details_no_departures" android:drawableTop="@drawable/img_empty_state_info" android:textAlignment="center"/>
+    </FrameLayout>
+    <include layout="@layout/app_widget_favorite_bottom_bar"/>
+</LinearLayout>

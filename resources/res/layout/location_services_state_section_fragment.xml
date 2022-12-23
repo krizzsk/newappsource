@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/location_services_message" android:background="@drawable/bg_rounded_corners" android:padding="@dimen/screen_edge" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/half_screen_edge" app:backgroundTint="?attr/colorSurfaceProblem" app:drawableStartCompat="@drawable/ic_location_24_problem"/>
+</FrameLayout>

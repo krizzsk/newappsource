@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rate_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/scroller">
+    <ImageView android:layout_gravity="top" android:id="@+id/shadow" android:layout_width="match_parent" android:layout_height="2dp" app:srcCompat="@drawable/shadow_top_4"/>
+    <Button android:id="@+id/rate_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="10dp" android:text="@string/tod_passenger_rides_details_rate_button"/>
+</FrameLayout>

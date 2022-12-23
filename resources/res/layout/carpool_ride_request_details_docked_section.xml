@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/dock_container" android:background="?attr/colorSurface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/dock_shadow" android:background="@drawable/divider_horizontal_full" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:theme="@style/ThemeOverlay.Moovit.Button.Critical" android:id="@+id/action" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:text="@string/carpool_cancel_booking_button" style="?attr/borderlessButtonStyle"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

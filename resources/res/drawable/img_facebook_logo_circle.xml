@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@color/facebook" android:pathData="M21,12.055C21,7.055 16.97,3 12,3s-9,4.054 -9,9.055c0,4.52 3.291,8.266 7.594,8.945v-6.328H8.309v-2.617h2.285V10.06c0,-2.27 1.343,-3.523 3.4,-3.523 0.984,0 2.014,0.177 2.014,0.177v2.228h-1.135c-1.118,0 -1.467,0.698 -1.467,1.414v1.699h2.496l-0.399,2.617h-2.097V21C17.71,20.32 21,16.575 21,12.055" android:fillType="0"/>
+</vector>

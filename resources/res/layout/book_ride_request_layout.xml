@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Moovit.Toolbar.Dark"/>
+    <ScrollView android:id="@+id/page_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:background="?attr/colorSurfaceDark" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <fragment android:name="com.moovit.app.suggestedroutes.TripPlanLocationSearchFragment" android:id="@+id/location_search_fragment" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_carpool_schedule_24_on_surface_emphasis_low" android:id="@+id/pickup_date" android:layout_width="match_parent" android:layout_height="wrap_content" app:subtitleTextColor="?attr/colorPrimary" app:title="@string/ride_schedule_date_label" style="?attr/listItemLabeledStyle"/>
+            <ImageView style="?attr/dividerHorizontalStyle"/>
+            <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_carpool_time_24_on_surface_emphasis_low" android:id="@+id/pickup_time_range" android:layout_width="match_parent" android:layout_height="wrap_content" app:subtitleTextColor="?attr/colorPrimary" app:title="@string/carpool_passenger_pickup_range_label" style="?attr/listItemLabeledStyle"/>
+            <ImageView style="?attr/dividerHorizontalStyle"/>
+            <com.moovit.design.view.list.ListItemLayout android:id="@+id/walk_time" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/screen_edge" android:paddingTop="20dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:iconSpacing="16dp" app:titlesSpacing="4dp">
+                <ImageView android:tag="icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_walk_24_on_surface_emphasis_low"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="title" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carpool_passenger_total_walking_time_label"/>
+                    <ImageView android:id="@+id/walk_time_info" android:paddingLeft="11dp" android:paddingRight="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/voice_over_more_information_hint" app:srcCompat="@drawable/ic_info_16_info"/>
+                </LinearLayout>
+                <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorPrimary" android:id="@+id/walk_time_text" android:tag="subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.moovit.design.view.list.ListItemLayout>
+            <ImageView style="?attr/dividerHorizontalStyle"/>
+            <com.moovit.design.view.list.ListItemLayout android:id="@+id/current_price_button" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/screen_edge" android:paddingTop="20dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:iconSpacing="16dp" app:titlesSpacing="4dp">
+                <ImageView android:tag="icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/img_carpool_price"/>
+                <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:tag="title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carpool_passenger_set_max_price_title"/>
+                <FrameLayout android:tag="subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/current_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_price"/>
+                    <ProgressBar android:layout_gravity="start" android:id="@+id/pricing_progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+                </FrameLayout>
+            </com.moovit.design.view.list.ListItemLayout>
+            <ImageView style="?attr/dividerHorizontalStyle"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/credit_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="15dp" android:layout_marginRight="@dimen/screen_edge">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carpool_passenger_coupon_label"/>
+                    <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:id="@+id/coupon_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carpool_passenger_coupon_description"/>
+                </LinearLayout>
+                <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorGood" android:id="@+id/next_ride_coupon" android:background="@drawable/carpool_ride_request_coupon_background" android:paddingLeft="12dp" android:paddingTop="7dp" android:paddingRight="12dp" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/book_ride_request" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="10dp" android:text="@string/carpool_passenger_book_now_button"/>
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/book_ride_request_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+    </FrameLayout>
+</LinearLayout>

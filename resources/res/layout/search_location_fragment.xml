@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.moovit.design.view.AlertMessageView android:icon="@drawable/img_empty_state_omni" android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:subtitle="@string/search_location_empty_state"/>
+    <com.moovit.commons.view.list.SectionedListView android:id="@+id/suggested_list" android:layout_width="match_parent" android:layout_height="match_parent" app:sectionDivider="@null"/>
+    <com.moovit.commons.view.list.SectionedListView android:id="@+id/result_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

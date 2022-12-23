@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.github.clans.fab.FloatingActionButton android:id="@+id/fab_edit_station" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_station_16_on_surface_emphasis_high" app:fab_colorNormal="?attr/colorSurface" app:fab_colorPressed="?attr/colorSurfaceVariant" app:fab_label="@string/action_edit_station" app:fab_size="1"/>
+    <com.github.clans.fab.FloatingActionButton android:id="@+id/fab_add_pathway" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pathway_both_hollow_16_on_surface_emphasis_high" app:fab_colorNormal="?attr/colorSurface" app:fab_colorPressed="?attr/colorSurfaceVariant" app:fab_label="@string/action_add_pathway" app:fab_size="1"/>
+</merge>

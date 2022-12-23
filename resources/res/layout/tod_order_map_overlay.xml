@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:theme="@style/ThemeOverlay.Moovit.FloatingActionButton.Surface.EmphasisHigh" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/map_zoom_journey_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fabSize="1"/>
+</merge>

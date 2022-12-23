@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_recent_trips_24_on_surface_emphasis_high" android:id="@+id/info_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="?attr/ticketCardListItemInfoStyle">
+        <ImageView android:tag="accessory" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.moovit.design.view.list.ListItemView>
+    <ImageView android:id="@+id/ticket_divider" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/info_view" style="?attr/dividerHorizontalFullStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_passengers_24_on_surface_high" android:id="@+id/additional_info_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ticket_divider" style="?attr/ticketCardListItemMoreInfoStyle">
+        <com.moovit.view.PriceView android:tag="accessory" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.moovit.design.view.list.ListItemView>
+    <Button android:id="@+id/ticket_action_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginStart="@dimen/screen_edge" android:layout_marginEnd="@dimen/screen_edge" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/additional_info_view" style="?attr/materialButtonOutlinedStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

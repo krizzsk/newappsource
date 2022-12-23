@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroller" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="29dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnPrimary" android:id="@+id/status_view" android:background="?attr/colorPrimary" android:paddingLeft="@dimen/screen_edge" android:paddingTop="11dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="36dp" android:text="@string/carpool_passenger_waiting_for_approval_title" style="?attr/textViewCenteredStyle"/>
+            <Space android:layout_width="0dp" android:layout_height="20dp"/>
+            <include layout="@layout/carpool_ride_request_details_main_section"/>
+            <Space android:layout_width="0dp" android:layout_height="26dp"/>
+            <include layout="@layout/carpool_ride_request_details_notice_section"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include layout="@layout/carpool_ride_request_details_docked_section"/>
+</LinearLayout>

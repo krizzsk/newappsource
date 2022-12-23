@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/country_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/vrff_constraint_guides_24"/>
+    <mobi.lab.veriff.layouts.VeriffToolbar android:id="@+id/country_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.constraintlayout.widget.Group android:id="@+id/country_confirm_group" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="country_title,country_instruction,country_selected_container,country_button_continue"/>
+    <include layout="@layout/vrff_view_country_confirm"/>
+    <androidx.constraintlayout.widget.Group android:id="@+id/country_search_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="country_search_container,country_recycler_container"/>
+    <include layout="@layout/vrff_view_country_search"/>
+    <include android:id="@+id/loading_group" layout="@layout/vrff_loading"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

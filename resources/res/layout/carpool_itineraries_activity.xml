@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/driver_share_referral" android:background="?attr/colorInfo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+        <ImageView android:layout_width="72dp" android:layout_height="wrap_content" android:scaleType="center" app:srcCompat="@drawable/img_carpool_cell_logo"/>
+        <Space android:layout_width="15dp" android:layout_height="match_parent"/>
+        <TextView android:textAppearance="?attr/textAppearanceCaptionStrong" android:textColor="?attr/colorOnStatus" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/carpool_referral_banner" android:drawablePadding="26dp" android:layout_weight="1" app:drawableEndCompat="@drawable/ic_arrow_end_24_on_status" app:drawableRightCompat="@drawable/ic_arrow_end_24_on_status"/>
+        <Space android:layout_width="11dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

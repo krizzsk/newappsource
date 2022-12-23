@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/camera_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/vrff_size_56" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:gravity="center" android:id="@+id/instruction_close" android:background="?attr/selectableItemBackground" android:padding="@dimen/vrff_margin_m" android:layout_width="@dimen/vrff_size_52" android:layout_height="@dimen/vrff_size_52" android:layout_marginTop="@dimen/vrff_margin_s" android:src="@drawable/vrff_ic_close" android:layout_marginStart="@dimen/vrff_margin_s"/>
+    </RelativeLayout>
+    <com.veriff.views.VeriffTextView android:id="@+id/instruction_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" android:layout_marginStart="@dimen/vrff_margin_24" android:layout_marginEnd="@dimen/vrff_margin_24" style="@style/vrffText.title"/>
+    <com.veriff.views.VeriffTextView android:id="@+id/instruction_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" android:layout_marginStart="@dimen/vrff_margin_24" android:layout_marginEnd="@dimen/vrff_margin_24" style="@style/vrffText.16"/>
+    <ImageView android:id="@+id/instruction_image" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="@dimen/vrff_margin_24" android:layout_weight="1" android:importantForAccessibility="no"/>
+    <mobi.lab.veriff.layouts.VeriffButton android:id="@+id/instructions_ok_btn" android:layout_width="match_parent" android:layout_height="@dimen/vrff_button_height" android:layout_margin="@dimen/vrff_margin_24" app:vrff_button_type="20" app:vrff_button_ui="10" style="@style/vrffButton.text"/>
+</merge>

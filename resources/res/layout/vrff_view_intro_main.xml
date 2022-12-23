@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/intro_main_layout" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <mobi.lab.veriff.layouts.VeriffToolbar android:id="@+id/intro_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_constraintTop_toTopOf="0"/>
+    <ScrollView android:id="@+id/intro_scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/intro_toolbar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/intro_title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" android:paddingStart="@dimen/vrff_margin_24" android:paddingEnd="@dimen/vrff_margin_24">
+            <com.veriff.views.VeriffTextView android:id="@+id/intro_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" style="@style/vrffText.title"/>
+            <com.veriff.views.VeriffTextView android:id="@+id/intro_txt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" style="@style/vrffText.16"/>
+            <com.veriff.views.VeriffTextView android:textStyle="bold" android:id="@+id/intro_instruction" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" android:textAllCaps="true" style="@style/vrffText.14"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/intro_message_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/vrff_margin_s" android:layout_marginBottom="@dimen/vrff_margin_s" android:layout_weight="1"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/intro_cta_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.veriff.views.VeriffTextView android:gravity="center_horizontal" android:id="@+id/intro_privacy_policy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vrff_margin_l" style="@style/vrffText.14"/>
+                <mobi.lab.veriff.layouts.VeriffButton android:id="@+id/start_verification_from_intro" android:layout_width="match_parent" android:layout_height="@dimen/vrff_button_height" android:layout_marginTop="@dimen/vrff_margin_l" android:layout_marginBottom="@dimen/vrff_margin_24" app:vrff_button_type="20" app:vrff_button_ui="10"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

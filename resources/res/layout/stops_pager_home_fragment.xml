@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.commons.view.window.ScrimInsetsFrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:insetsForeground="?attr/colorOnSurface" app:setInsetsAsPadding="true">
+    <fragment android:id="@+id/search_stops_pager_fragment" android:layout_width="match_parent" android:layout_height="match_parent" class="com.moovit.home.stops.search.SearchStopPagerFragment"/>
+</com.moovit.commons.view.window.ScrimInsetsFrameLayout>

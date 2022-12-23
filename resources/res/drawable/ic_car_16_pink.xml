@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="16dp" android:width="16dp" android:viewportWidth="20" android:viewportHeight="20">
+    <path android:fillColor="#f50057" android:pathData="M16.151,3.884C15.962,3.35 15.455,2.995 14.889,3H5.111C4.546,2.998 4.04,3.352 3.849,3.884L2,9.125V16c0.047,0.532 0.468,0.953 1,1h1c0.532,-0.047 0.953,-0.468 1,-1v-0.5h10V16c0.047,0.532 0.468,0.953 1,1h1c0.532,-0.047 0.953,-0.468 1,-1V9.125L16.151,3.884zM4.5,11.969c-0.543,-0.009 -0.977,-0.456 -0.968,-1c0.009,-0.543 0.456,-0.977 1,-0.968C5.069,10.01 5.5,10.448 5.5,10.985c-0.004,0.547 -0.451,0.988 -0.998,0.984C4.501,11.969 4.501,11.969 4.5,11.969zM15.5,11.969c-0.543,-0.009 -0.977,-0.456 -0.968,-1c0.009,-0.543 0.456,-0.977 1,-0.968c0.537,0.009 0.968,0.447 0.968,0.984c-0.004,0.547 -0.451,0.988 -0.998,0.984C15.501,11.969 15.501,11.969 15.5,11.969zM3.5,8.5L5,4h10l1.5,4.5H3.5z"/>
+    <path android:fillColor="#f50057" android:pathData="M17.5,8h2v1h-2z"/>
+    <path android:fillColor="#f50057" android:pathData="M0.5,8h2v1h-2z"/>
+</vector>

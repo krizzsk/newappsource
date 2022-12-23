@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top" android:orientation="horizontal" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="57dp" android:paddingEnd="@dimen/screen_edge">
+    <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurface" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Space android:layout_width="11dp" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurface" android:id="@+id/destination" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurface" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorPrimary" android:gravity="center_vertical" android:id="@+id/action" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:minHeight="30dp" android:importantForAccessibility="no"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/extended_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/carpool_driver_profile_new_badge"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/description_container" android:paddingTop="20dp" android:paddingBottom="29dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_horizontal_full_16_transparent" android:showDividers="middle">
+        <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:id="@+id/self_description" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:id="@+id/car_description" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="6dp"/>
+        <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:id="@+id/company_description" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="6dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/divider" android:background="@drawable/divider_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.moovit.view.CheckListView android:id="@+id/check_list" android:paddingTop="29dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:checkedIcon="@drawable/ic_check_mark_ring_16_good"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Widget.Moovit.AppBarLayout">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="15" style="@style/Widget.Moovit.Toolbar.Light.Transparent">
+            <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tickets_center_title"/>
+        </com.google.android.material.appbar.MaterialToolbar>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tabs" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" app:tabMode="0"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.moovit.commons.view.pager.ViewPager android:id="@+id/view_pager" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/app_bar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

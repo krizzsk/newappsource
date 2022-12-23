@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_content" android:paddingTop="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_success_56_info"/>
+    <Space android:layout_width="0dp" android:layout_height="24dp"/>
+    <TextView android:id="@+id/survey_complete_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="24dp" android:layout_marginRight="24dp" android:text="@string/report_thank_you" style="?attr/dialogTitleStyle"/>
+    <Space android:layout_width="0dp" android:layout_height="18dp"/>
+    <Button android:id="@+id/tell_us_more" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="18dp" android:layout_marginRight="24dp" android:text="@string/tell_us_more_key" style="?attr/dialogPositiveButtonStyle"/>
+    <Button android:id="@+id/not_now" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="18dp" android:text="@string/not_now_button" style="?attr/dialogNegativeButtonStyle"/>
+</LinearLayout>

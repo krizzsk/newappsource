@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurface" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_entity_add_photo_header"/>
+    <fragment android:name="com.moovit.gallery.EmbeddedGalleryFragment" android:id="@+id/gallery" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+    <com.moovit.commons.view.FormatTextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:id="@+id/compliance" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content" app:format="@string/edit_entity_photos_compliance_message"/>
+</LinearLayout>

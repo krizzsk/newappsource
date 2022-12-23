@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_interstitial_close_icon" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_close" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" android:scaleType="fitCenter" android:contentDescription="@string/umoak_name" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/umoak_ic_close_circular_grey"/>
+</RelativeLayout>

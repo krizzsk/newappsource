@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/search_button_container" android:background="?attr/colorSurfaceDark" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:theme="@style/ThemeOverlay.Moovit.Button.Secondary" android:id="@+id/search_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:text="@string/trip_plan_search_routes"/>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/app_bar" layout="@layout/line_detail_activity_header"/>
+    <include android:id="@+id/directions_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/app_bar" layout="@layout/line_detail_directions_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/banner_ad_fragment" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/directions_bar_container">
+        <FrameLayout android:id="@+id/line_detail_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView android:name="com.moovit.app.ads.MoovitAnchoredBannerAdFragment" android:id="@+id/banner_ad_fragment" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/bottom_bars_barrier" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <androidx.constraintlayout.widget.Barrier android:id="@+id/bottom_bars_barrier" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierAllowsGoneWidgets="true" app:barrierDirection="2" app:constraint_referenced_ids="quick_actions_bar"/>
+    <include android:id="@+id/quick_actions_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" layout="@layout/quick_actions_template"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

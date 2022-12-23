@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="24dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/question" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp" style="?attr/dialogTitleStyle"/>
+    <include layout="@layout/helpfulness_bar"/>
+    <android.widget.Space android:layout_width="0dp" android:layout_height="16dp"/>
+    <include layout="@layout/helpfulness_bar_index"/>
+    <Button android:layout_gravity="center_horizontal" android:id="@+id/alternative_answer" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="@dimen/screen_edge" android:layout_marginEnd="@dimen/screen_edge" style="?attr/dialogNeutralButtonStyle"/>
+</LinearLayout>

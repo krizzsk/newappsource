@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="16dp" style="?attr/toolbarStyle">
+        <com.moovit.design.view.list.ListItemView android:id="@+id/line_template" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/transitLineHeaderStyle"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <include layout="@layout/line_schedule_header"/>
+    <include layout="@layout/line_schedule_search_box"/>
+    <ImageView style="?attr/dividerHorizontalFullStyle"/>
+    <include layout="@layout/line_schedule_stops_header"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/schedule_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:importantForAccessibility="no"/>
+    <androidx.fragment.app.FragmentContainerView android:name="com.moovit.app.ads.MoovitAnchoredBannerAdFragment" android:id="@+id/banner_ad_fragment" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

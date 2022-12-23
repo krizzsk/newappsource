@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.design.view.AlertMessageView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:icon="@drawable/img_empty_state_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:subtitle="@string/trip_plan_not_supported_failure_message" app:title="@string/trip_plan_not_supported_failure_title"/>

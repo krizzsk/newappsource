@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="18" android:viewportHeight="18">
+    <path android:fillColor="@color/twitter" android:pathData="M5.8,16 A9.99,9.99,0,0,0,15.862,5.942 C15.862,5.789,15.862,5.637,15.852,5.485 A7.192,7.192,0,0,0,17.616,3.655 A7.056,7.056,0,0,1,15.586,4.211 A3.547,3.547,0,0,0,17.14,2.256 A7.084,7.084,0,0,1,14.895,3.114 A3.538,3.538,0,0,0,8.87,6.338 A10.036,10.036,0,0,1,1.584,2.645 A3.538,3.538,0,0,0,2.679,7.364 A3.509,3.509,0,0,1,1.079,6.922 L1.079,6.967 A3.536,3.536,0,0,0,3.91,10.431 A3.529,3.529,0,0,1,2.31,10.492 A3.539,3.539,0,0,0,5.61,12.947 A7.093,7.093,0,0,1,1.22,14.463 A7.2,7.2,0,0,1,0.379,14.412 A10.008,10.008,0,0,0,5.8,16"/>
+</vector>

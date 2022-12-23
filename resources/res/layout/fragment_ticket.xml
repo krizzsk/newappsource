@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ticket_root_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/ticket_loading_container" layout="@layout/view_ticket_loading"/>
+    <include android:id="@+id/ticket_error_container" layout="@layout/view_ticket_error"/>
+    <ScrollView android:id="@+id/ticket_content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ticket_content_container_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ticket_use_it_or_lose_it_container" android:paddingLeft="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:paddingTop="@dimen/com_masabi_justride_sdk_activity_vertical_margin" android:paddingRight="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:paddingBottom="@dimen/com_masabi_justride_sdk_activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ticket_use_it_or_lose_it_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/com_masabi_justride_sdk_ticket_warning_icon" android:layout_marginEnd="8dp"/>
+                <TextView android:gravity="start" android:id="@+id/ticket_use_it_or_lose_it_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ticket_warning_container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/ticket_warning_icon_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/com_masabi_justride_sdk_ticket_not_available" android:scaleType="fitCenter"/>
+                <TextView android:textSize="18sp" android:id="@+id/ticket_warning_header_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/com_masabi_justride_sdk_ticket_warning_unavailable_header" android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ticket_status_container" android:paddingTop="40dp" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:paddingEnd="@dimen/com_masabi_justride_sdk_activity_horizontal_margin">
+                <TextView android:id="@+id/ticket_status_header_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/ticket_status_sub_header_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/validation_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="32dp"/>
+                <FrameLayout android:id="@+id/validation_view_container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="@dimen/com_masabi_justride_sdk_visual_validator_height">
+                    <com.masabi.justride.sdk.p415ui.features.ticket.VisualValidationView android:id="@+id/vis_val_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_marginStart="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:layout_marginEnd="@dimen/com_masabi_justride_sdk_activity_horizontal_margin"/>
+                    <ImageView android:id="@+id/barcode_image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+                </FrameLayout>
+                <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/pull_to_reveal_text_view" android:background="@android:color/white" android:paddingTop="24dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+                <FrameLayout android:id="@+id/validation_toggle_container" android:layout_width="70dp" android:layout_height="35dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/validation_toggle_up_image_view" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginBottom="2dp" android:scaleType="centerInside"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/validation_toggle_down_image_view" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginBottom="2dp" android:scaleType="centerInside"/>
+                </FrameLayout>
+            </LinearLayout>
+            <Button android:id="@+id/activate_ticket_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/com_masabi_justride_sdk_ticket_activate_button" android:textAllCaps="false" android:layout_marginStart="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:layout_marginEnd="@dimen/com_masabi_justride_sdk_activity_horizontal_margin"/>
+            <TextView android:gravity="center" android:id="@+id/activation_time_text_view" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:layout_marginEnd="@dimen/com_masabi_justride_sdk_activity_horizontal_margin"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ticket_name_container" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:layout_marginEnd="@dimen/com_masabi_justride_sdk_activity_horizontal_margin">
+                <TextView android:gravity="center" android:id="@+id/ticket_name_text_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ticket_strapline_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <ImageView android:id="@+id/ticket_strapline_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/com_masabi_justride_sdk_info" android:layout_marginEnd="8dp"/>
+                    <TextView android:gravity="start" android:id="@+id/ticket_strapline_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <WebView android:gravity="center" android:id="@+id/ticket_configurable_content_web_view" android:focusable="false" android:focusableInTouchMode="false" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="150dp" android:layout_marginTop="10dp" android:layout_marginStart="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:layout_marginEnd="@dimen/com_masabi_justride_sdk_activity_horizontal_margin"/>
+            <FrameLayout android:gravity="center" android:id="@+id/ticket_face_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:layout_marginEnd="@dimen/com_masabi_justride_sdk_activity_horizontal_margin"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ticket_section" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="@dimen/com_masabi_justride_sdk_activity_horizontal_margin" android:layout_marginEnd="@dimen/com_masabi_justride_sdk_activity_horizontal_margin">
+                <Button android:id="@+id/ticket_info_button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/com_masabi_justride_sdk_ticket_info_title" android:layout_weight="1" android:textAllCaps="false"/>
+                <Button android:id="@+id/ticket_actions_button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/com_masabi_justride_sdk_ticket_actions" android:layout_weight="1" android:textAllCaps="false" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <shortcut android:icon="@drawable/wdg_img_feedback_shortcut_24" android:enabled="true" android:shortcutId="feedback" android:shortcutShortLabel="@string/app_shortcuts_feedback_short" android:shortcutLongLabel="@string/app_shortcuts_feedback_long">
+        <intent android:targetPackage="com.tranzmate" android:action="android.intent.action.VIEW" android:targetClass="com.moovit.app.home.HomeActivity"/>
+        <intent android:targetPackage="com.tranzmate" android:action="android.intent.action.VIEW" android:targetClass="com.moovit.app.help.feedback.FeedbackFormActivity">
+            <extra android:name="origin" android:value="LongTap"/>
+            <extra android:name="ctag" android:value="feedback_cat_other"/>
+            <extra android:name="ftag" android:value="general_feedback"/>
+        </intent>
+    </shortcut>
+</shortcuts>

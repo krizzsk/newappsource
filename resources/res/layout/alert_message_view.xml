@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/alertMessageStyle">
+    <ImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/alertMessageIconStyle"/>
+    <Space android:id="@+id/title_space" android:layout_width="match_parent" android:layout_height="24dp"/>
+    <TextView android:id="@+id/title" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/alertMessageTitleStyle"/>
+    <Space android:id="@+id/subtitle_space" android:layout_width="match_parent" android:layout_height="16dp"/>
+    <TextView android:id="@+id/subtitle" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/alertMessageSubtitleStyle"/>
+    <Space android:id="@+id/buttons_space" style="?attr/alertMessageButtonsSpaceStyle"/>
+    <Button android:id="@+id/positive_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" style="?attr/alertMessagePositiveButtonStyle"/>
+    <Space android:id="@+id/negative_button_space" style="?attr/alertMessageNegativeButtonSpaceStyle"/>
+    <Button android:id="@+id/negative_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" style="?attr/alertMessageNegativeButtonStyle"/>
+</merge>

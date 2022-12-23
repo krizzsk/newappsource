@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/stops_header" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/departure_stop" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.95" android:paddingStart="0dp" android:paddingEnd="0dp" app:title="@string/depart" style="?attr/listItemLabeledStyle"/>
+    <android.widget.Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.05"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/arrival_stop" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="0dp" android:paddingEnd="0dp" app:title="@string/arrive" style="?attr/listItemLabeledStyle"/>
+</LinearLayout>

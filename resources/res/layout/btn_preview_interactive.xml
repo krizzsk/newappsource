@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="4dp" style="@style/BtnInteractiveButton">
+    <com.usebutton.sdk.internal.views.PreviewView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btn_preview" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="6dp" style="@style/BtnInteractiveButton">
+        <Space android:id="@+id/btn_preview_left_space" android:layout_width="0dp" android:layout_height="1dp"/>
+        <com.usebutton.sdk.internal.views.AssetImageView android:id="@+id/btn_preview_icon" android:focusable="false" android:clickable="false" android:layout_width="@dimen/btn_button_icon_size" android:layout_height="@dimen/btn_button_icon_size" android:scaleType="centerInside"/>
+        <Space android:id="@+id/btn_preview_right_space" android:layout_width="0dp" android:layout_height="1dp"/>
+        <com.usebutton.sdk.internal.views.LoadingDots android:id="@+id/btn_preview_loading" android:layout_width="wrap_content" android:layout_height="10dp" app:btn_dotSize="10dp" app:btn_loadingDotsCount="3" app:btn_paddingRight="8dp"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/btn_texts" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/btn_preview_title" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="15dp" android:textColor="@color/btn_grey_dark" android:ellipsize="marquee" android:id="@+id/btn_preview_label" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        </LinearLayout>
+    </com.usebutton.sdk.internal.views.PreviewView>
+    <com.usebutton.sdk.internal.views.HumbleViewPager android:id="@+id/btn_inventory_pager" android:paddingLeft="25dp" android:paddingRight="6dp" android:paddingBottom="2dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="8dp"/>
+</LinearLayout>

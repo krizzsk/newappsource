@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/bus_italia_tod_section_title" style="?attr/listItemSectionHeaderStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/img_logo_bus_italia_24" android:id="@+id/list_item_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bus_italia_tod_section_item_title" android:subtitle="@string/bus_italia_tod_section_item_subtitle">
+        <Button android:id="@+id/accessory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_order" app:backgroundTint="#006664" style="@style/Widget.Moovit.ListItem.Accessory.Button"/>
+    </com.moovit.design.view.list.ListItemView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:autoMirrored="true">
+    <item android:state_selected="true" android:state_activated="true">
+        <animation-list>
+            <item android:duration="1000" android:drawable="@drawable/wdg_ic_tab_directions_live_on_1"/>
+            <item android:duration="1000" android:drawable="@drawable/wdg_ic_tab_directions_live_on_2"/>
+        </animation-list>
+    </item>
+    <item android:state_selected="false" android:state_activated="true">
+        <animation-list>
+            <item android:duration="1000" android:drawable="@drawable/wdg_ic_tab_directions_live_off_1"/>
+            <item android:duration="1000" android:drawable="@drawable/wdg_ic_tab_directions_live_off_2"/>
+        </animation-list>
+    </item>
+    <item android:state_selected="true" android:drawable="@drawable/wdg_ic_tab_directions_on"/>
+    <item android:drawable="@drawable/wdg_ic_tab_directions_off"/>
+</selector>

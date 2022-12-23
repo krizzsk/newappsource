@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/carpool_driver_profile_activity_title" style="?attr/toolbarStyle"/>
+        <include layout="@layout/carpool_driver_profile_main_section"/>
+        <include layout="@layout/carpool_driver_profile_contact_section"/>
+        <View android:background="@drawable/divider_horizontal_full" android:layout_width="match_parent" android:layout_height="1px"/>
+        <include layout="@layout/carpool_driver_profile_extended_section"/>
+    </LinearLayout>
+</ScrollView>

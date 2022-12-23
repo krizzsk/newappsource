@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/intro_content" android:paddingLeft="22dp" android:paddingTop="30dp" android:paddingRight="22dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/img_accept_payment"/>
+            <TextView android:textAppearance="?attr/textAppearanceHeadline4" android:textColor="?attr/colorInfo" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+            <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/carpool_passenger_promo_subtitle" android:textAlignment="center"/>
+            <TextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:layout_gravity="center_horizontal" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:theme="@style/ThemeOverlay.Moovit.Button.Tertiary" android:layout_gravity="center_horizontal" android:id="@+id/confirm_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:minWidth="144dp" android:text="@string/got_it"/>
+</LinearLayout>

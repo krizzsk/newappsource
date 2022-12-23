@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.map.MapFragmentView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="true" android:contentDescription="@string/voice_over_map">
+    <com.moovit.map.google.GoogleMapViewParent android:id="@+id/map_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.moovit.map.google.GoogleMapView android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.moovit.map.google.GoogleMapViewParent>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/google_map_overlays"/>
+</com.moovit.map.MapFragmentView>

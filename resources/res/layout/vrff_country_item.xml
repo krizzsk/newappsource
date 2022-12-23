@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/country_item" android:layout_width="match_parent" android:layout_height="@dimen/vrff_size_64" android:foreground="?attr/selectableItemBackground">
+    <TextView android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/country_label" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/vrff_margin_24" android:layout_marginEnd="@dimen/vrff_margin_24" style="@style/vrffText.16"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Moovit.Dark" android:orientation="horizontal" android:background="?attr/colorSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp">
+    <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurface" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:text="@string/carpool_credit_card_security_disclaimer" app:drawableStartCompat="@drawable/ic_lock_16_good"/>
+</FrameLayout>

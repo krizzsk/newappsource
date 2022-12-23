@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/inflow_end_uploading" layout="@layout/vrff_container_inflow_at_end_uploading"/>
+    <include android:id="@+id/inflow_end_summary" layout="@layout/vrff_view_inflow_at_end_summary"/>
+</RelativeLayout>

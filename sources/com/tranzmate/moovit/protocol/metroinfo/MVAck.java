@@ -1,0 +1,381 @@
+package com.tranzmate.moovit.protocol.metroinfo;
+
+import com.appboy.support.StringUtils;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.io.Serializable;
+import java.util.BitSet;
+import java.util.Collections;
+import java.util.EnumMap;
+import java.util.EnumSet;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import org.apache.thrift.TBase;
+import org.apache.thrift.TException;
+import org.apache.thrift.meta_data.FieldMetaData;
+import org.apache.thrift.meta_data.FieldValueMetaData;
+import p358af.C13437d;
+import p389bl.C13637c;
+import p531he.C17394d0;
+import ui0.C25082a;
+import ui0.C25085c;
+import vi0.C25112b;
+import vi0.C25113c;
+import vi0.C25121g;
+import vi0.C25122h;
+import vi0.C25124j;
+import wi0.C25237a;
+import wi0.C25238b;
+import wi0.C25239c;
+import wi0.C25240d;
+import xi0.C25276a;
+
+public class MVAck implements TBase<MVAck, _Fields>, Serializable, Cloneable, Comparable<MVAck> {
+
+    /* renamed from: b */
+    public static final C25113c f26446b = new C25113c("title", (byte) 11, 1);
+
+    /* renamed from: c */
+    public static final C25113c f26447c = new C25113c("desc", (byte) 11, 2);
+
+    /* renamed from: d */
+    public static final C25113c f26448d = new C25113c("image", (byte) 8, 3);
+
+    /* renamed from: e */
+    public static final HashMap f26449e;
+
+    /* renamed from: f */
+    public static final Map<_Fields, FieldMetaData> f26450f;
+    private byte __isset_bitfield = 0;
+    public String desc;
+    public int image;
+    private _Fields[] optionals = {_Fields.DESC, _Fields.IMAGE};
+    public String title;
+
+    public enum _Fields implements C25085c {
+        TITLE(1, "title"),
+        DESC(2, "desc"),
+        IMAGE(3, "image");
+        
+        private static final Map<String, _Fields> byName = null;
+        private final String _fieldName;
+        private final short _thriftId;
+
+        /* access modifiers changed from: public */
+        static {
+            byName = new HashMap();
+            Iterator<E> it = EnumSet.allOf(_Fields.class).iterator();
+            while (it.hasNext()) {
+                _Fields _fields = (_Fields) it.next();
+                byName.put(_fields.getFieldName(), _fields);
+            }
+        }
+
+        private _Fields(short s, String str) {
+            this._thriftId = s;
+            this._fieldName = str;
+        }
+
+        public static _Fields findByName(String str) {
+            return byName.get(str);
+        }
+
+        public static _Fields findByThriftId(int i) {
+            if (i == 1) {
+                return TITLE;
+            }
+            if (i == 2) {
+                return DESC;
+            }
+            if (i != 3) {
+                return null;
+            }
+            return IMAGE;
+        }
+
+        public static _Fields findByThriftIdOrThrow(int i) {
+            _Fields findByThriftId = findByThriftId(i);
+            if (findByThriftId != null) {
+                return findByThriftId;
+            }
+            throw new IllegalArgumentException(C25541a.m63878h("Field ", i, " doesn't exist!"));
+        }
+
+        public String getFieldName() {
+            return this._fieldName;
+        }
+
+        public short getThriftFieldId() {
+            return this._thriftId;
+        }
+    }
+
+    /* renamed from: com.tranzmate.moovit.protocol.metroinfo.MVAck$a */
+    public static class C9158a extends C25239c<MVAck> {
+        public C9158a(int i) {
+        }
+
+        /* renamed from: a */
+        public final void mo25217a(C25121g gVar, TBase tBase) throws TException {
+            MVAck mVAck = (MVAck) tBase;
+            mVAck.getClass();
+            C25113c cVar = MVAck.f26446b;
+            gVar.mo61687K();
+            if (mVAck.title != null) {
+                gVar.mo61711x(MVAck.f26446b);
+                gVar.mo61686J(mVAck.title);
+                gVar.mo61712y();
+            }
+            if (mVAck.desc != null && mVAck.mo28560f()) {
+                gVar.mo61711x(MVAck.f26447c);
+                gVar.mo61686J(mVAck.desc);
+                gVar.mo61712y();
+            }
+            if (mVAck.mo28561g()) {
+                gVar.mo61711x(MVAck.f26448d);
+                gVar.mo61678B(mVAck.image);
+                gVar.mo61712y();
+            }
+            gVar.mo61713z();
+            gVar.mo61688L();
+        }
+
+        /* renamed from: b */
+        public final void mo25218b(C25121g gVar, TBase tBase) throws TException {
+            MVAck mVAck = (MVAck) tBase;
+            gVar.mo61705r();
+            while (true) {
+                C25113c f = gVar.mo61693f();
+                byte b = f.f63356b;
+                if (b == 0) {
+                    gVar.mo61706s();
+                    mVAck.getClass();
+                    return;
+                }
+                short s = f.f63357c;
+                if (s != 1) {
+                    if (s != 2) {
+                        if (s != 3) {
+                            C25122h.m63098a(gVar, b);
+                        } else if (b == 8) {
+                            mVAck.image = gVar.mo61696i();
+                            mVAck.mo28564i();
+                        } else {
+                            C25122h.m63098a(gVar, b);
+                        }
+                    } else if (b == 11) {
+                        mVAck.desc = gVar.mo61704q();
+                    } else {
+                        C25122h.m63098a(gVar, b);
+                    }
+                } else if (b == 11) {
+                    mVAck.title = gVar.mo61704q();
+                } else {
+                    C25122h.m63098a(gVar, b);
+                }
+                gVar.mo61694g();
+            }
+        }
+    }
+
+    /* renamed from: com.tranzmate.moovit.protocol.metroinfo.MVAck$b */
+    public static class C9159b implements C25238b {
+        /* renamed from: a */
+        public final C25237a mo25219a() {
+            return new C9158a(0);
+        }
+    }
+
+    /* renamed from: com.tranzmate.moovit.protocol.metroinfo.MVAck$c */
+    public static class C9160c extends C25240d<MVAck> {
+        public C9160c(int i) {
+        }
+
+        /* renamed from: a */
+        public final void mo25217a(C25121g gVar, TBase tBase) throws TException {
+            MVAck mVAck = (MVAck) tBase;
+            C25124j jVar = (C25124j) gVar;
+            BitSet bitSet = new BitSet();
+            if (mVAck.mo28562h()) {
+                bitSet.set(0);
+            }
+            if (mVAck.mo28560f()) {
+                bitSet.set(1);
+            }
+            if (mVAck.mo28561g()) {
+                bitSet.set(2);
+            }
+            jVar.mo61738U(bitSet, 3);
+            if (mVAck.mo28562h()) {
+                jVar.mo61686J(mVAck.title);
+            }
+            if (mVAck.mo28560f()) {
+                jVar.mo61686J(mVAck.desc);
+            }
+            if (mVAck.mo28561g()) {
+                jVar.mo61678B(mVAck.image);
+            }
+        }
+
+        /* renamed from: b */
+        public final void mo25218b(C25121g gVar, TBase tBase) throws TException {
+            MVAck mVAck = (MVAck) tBase;
+            C25124j jVar = (C25124j) gVar;
+            BitSet T = jVar.mo61737T(3);
+            if (T.get(0)) {
+                mVAck.title = jVar.mo61704q();
+            }
+            if (T.get(1)) {
+                mVAck.desc = jVar.mo61704q();
+            }
+            if (T.get(2)) {
+                mVAck.image = jVar.mo61696i();
+                mVAck.mo28564i();
+            }
+        }
+    }
+
+    /* renamed from: com.tranzmate.moovit.protocol.metroinfo.MVAck$d */
+    public static class C9161d implements C25238b {
+        /* renamed from: a */
+        public final C25237a mo25219a() {
+            return new C9160c(0);
+        }
+    }
+
+    static {
+        new C17394d0("MVAck");
+        HashMap hashMap = new HashMap();
+        f26449e = hashMap;
+        hashMap.put(C25239c.class, new C9159b());
+        hashMap.put(C25240d.class, new C9161d());
+        EnumMap enumMap = new EnumMap(_Fields.class);
+        enumMap.put(_Fields.TITLE, new FieldMetaData("title", (byte) 3, new FieldValueMetaData((byte) 11, false)));
+        enumMap.put(_Fields.DESC, new FieldMetaData("desc", (byte) 2, new FieldValueMetaData((byte) 11, false)));
+        enumMap.put(_Fields.IMAGE, new FieldMetaData("image", (byte) 2, new FieldValueMetaData((byte) 8, "MVImageReferenceWithoutParams")));
+        Map<_Fields, FieldMetaData> unmodifiableMap = Collections.unmodifiableMap(enumMap);
+        f26450f = unmodifiableMap;
+        FieldMetaData.m61947a(MVAck.class, unmodifiableMap);
+    }
+
+    private void readObject(ObjectInputStream objectInputStream) throws IOException, ClassNotFoundException {
+        try {
+            this.__isset_bitfield = 0;
+            mo25201C1(new C25112b(new C25276a((InputStream) objectInputStream)));
+        } catch (TException e) {
+            throw new IOException(e);
+        }
+    }
+
+    private void writeObject(ObjectOutputStream objectOutputStream) throws IOException {
+        try {
+            mo25202X0(new C25112b(new C25276a((OutputStream) objectOutputStream)));
+        } catch (TException e) {
+            throw new IOException(e);
+        }
+    }
+
+    /* renamed from: C1 */
+    public final void mo25201C1(C25121g gVar) throws TException {
+        ((C25238b) f26449e.get(gVar.mo61736a())).mo25219a().mo25218b(gVar, this);
+    }
+
+    /* renamed from: X0 */
+    public final void mo25202X0(C25121g gVar) throws TException {
+        ((C25238b) f26449e.get(gVar.mo61736a())).mo25219a().mo25217a(gVar, this);
+    }
+
+    public final int compareTo(Object obj) {
+        int c;
+        MVAck mVAck = (MVAck) obj;
+        if (!getClass().equals(mVAck.getClass())) {
+            return getClass().getName().compareTo(mVAck.getClass().getName());
+        }
+        int compareTo = Boolean.valueOf(mo28562h()).compareTo(Boolean.valueOf(mVAck.mo28562h()));
+        if (compareTo != 0 || ((mo28562h() && (compareTo = this.title.compareTo(mVAck.title)) != 0) || (compareTo = Boolean.valueOf(mo28560f()).compareTo(Boolean.valueOf(mVAck.mo28560f()))) != 0 || ((mo28560f() && (compareTo = this.desc.compareTo(mVAck.desc)) != 0) || (compareTo = Boolean.valueOf(mo28561g()).compareTo(Boolean.valueOf(mVAck.mo28561g()))) != 0))) {
+            return compareTo;
+        }
+        if (!mo28561g() || (c = C25082a.m62839c(this.image, mVAck.image)) == 0) {
+            return 0;
+        }
+        return c;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == null || !(obj instanceof MVAck)) {
+            return false;
+        }
+        MVAck mVAck = (MVAck) obj;
+        boolean h = mo28562h();
+        boolean h2 = mVAck.mo28562h();
+        if ((h || h2) && (!h || !h2 || !this.title.equals(mVAck.title))) {
+            return false;
+        }
+        boolean f = mo28560f();
+        boolean f2 = mVAck.mo28560f();
+        if ((f || f2) && (!f || !f2 || !this.desc.equals(mVAck.desc))) {
+            return false;
+        }
+        boolean g = mo28561g();
+        boolean g2 = mVAck.mo28561g();
+        if ((g || g2) && (!g || !g2 || this.image != mVAck.image)) {
+            return false;
+        }
+        return true;
+    }
+
+    /* renamed from: f */
+    public final boolean mo28560f() {
+        return this.desc != null;
+    }
+
+    /* renamed from: g */
+    public final boolean mo28561g() {
+        return C13637c.m34053H(this.__isset_bitfield, 0);
+    }
+
+    /* renamed from: h */
+    public final boolean mo28562h() {
+        return this.title != null;
+    }
+
+    public final int hashCode() {
+        return 0;
+    }
+
+    /* renamed from: i */
+    public final void mo28564i() {
+        this.__isset_bitfield = (byte) C13637c.m34050E(this.__isset_bitfield, 0, true);
+    }
+
+    public final String toString() {
+        StringBuilder n = C13437d.m33708n("MVAck(", "title:");
+        String str = this.title;
+        if (str == null) {
+            n.append(StringUtils.NULL_USER_ID_SUBSTITUTE_STRING);
+        } else {
+            n.append(str);
+        }
+        if (mo28560f()) {
+            n.append(", ");
+            n.append("desc:");
+            String str2 = this.desc;
+            if (str2 == null) {
+                n.append(StringUtils.NULL_USER_ID_SUBSTITUTE_STRING);
+            } else {
+                n.append(str2);
+            }
+        }
+        if (mo28561g()) {
+            n.append(", ");
+            n.append("image:");
+            n.append(this.image);
+        }
+        n.append(")");
+        return n.toString();
+    }
+}

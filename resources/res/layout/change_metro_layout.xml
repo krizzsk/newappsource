@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/dismiss_button" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/img_change_metro"/>
+        <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="22dp" android:maxLines="1" android:textAlignment="center" app:autoSizeMaxTextSize="18sp" app:autoSizeMinTextSize="14sp" app:autoSizeTextType="1"/>
+        <TextView android:textAppearance="?attr/textAppearanceHeadline4" android:textColor="?attr/colorOnSurface" android:gravity="center" android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="22dp" android:layout_marginBottom="22dp" android:textAlignment="center"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:measureAllChildren="true">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+    <Button android:id="@+id/confirm_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="18dp" android:layout_above="@+id/dismiss_button" android:layout_centerHorizontal="true"/>
+    <Button android:id="@+id/dismiss_button" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="18dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?attr/borderlessButtonStyle"/>
+</RelativeLayout>

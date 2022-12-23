@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <fragment android:id="@+id/map_fragment" android:layout_width="match_parent" android:layout_height="match_parent" app:displayUserMarker="true" app:enabledFollowModes="1" app:mapBottomShadow="false" app:mapTopShadow="false" app:minZoomToSelectOverlappingMarkers="0" class="com.moovit.map.MapFragment"/>
+</merge>

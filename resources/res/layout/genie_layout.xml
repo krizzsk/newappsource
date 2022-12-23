@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="300dp">
+    <TextView android:textAppearance="?attr/textAppearanceBodySmallStrong" android:textColor="?attr/colorOnStatus" android:id="@+id/genie_text" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?attr/textAppearanceBodySmallStrong" android:textColor="?attr/colorOnStatus" android:layout_gravity="end" android:id="@+id/genie_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/got_it" android:alpha="0.6" android:textAllCaps="true"/>
+</LinearLayout>

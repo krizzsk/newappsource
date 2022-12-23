@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.commons.view.list.FixedListView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/day_time_pickers" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_horizontal_full">
+    <RelativeLayout android:id="@+id/time_picker_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TimePicker android:id="@+id/time_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:timePickerMode="spinner"/>
+        <Button android:theme="@style/ThemeOverlay.Moovit.Button.TextButton.OnSurface" android:id="@+id/reset_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@string/time_picker_select_current" android:layout_toEndOf="@+id/time_picker" app:icon="@drawable/ic_restore_24" style="?attr/iconButtonStyle"/>
+    </RelativeLayout>
+    <com.moovit.view.pickers.WheelView android:id="@+id/day_picker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30dp" android:minHeight="210dp" android:layout_below="@+id/time_picker" android:layout_centerHorizontal="true" android:importantForAccessibility="yes"/>
+</com.moovit.commons.view.list.FixedListView>

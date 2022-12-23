@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <fragment android:id="@+id/map_fragment" android:layout_width="match_parent" android:layout_height="match_parent" class="com.moovit.map.MapFragment"/>
+        <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnStatus" android:background="?attr/colorInfo" android:paddingLeft="@dimen/screen_edge" android:paddingTop="16dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp" android:text="@string/choose_location_instruction"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:theme="@style/ThemeOverlay.Moovit.FloatingActionButton.Surface.EmphasisHigh" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/use_user_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginStart="10dp" app:fabSize="1" app:srcCompat="@drawable/use_user_location_bg"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/screen_edge" android:paddingTop="18dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/done" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:text="@string/action_set_location"/>
+        <fragment android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/address_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" class="com.moovit.location.AddressFragment"/>
+    </LinearLayout>
+</LinearLayout>

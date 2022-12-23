@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@+id/header" layout="@layout/itinerary_ng_header_layout"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ExpandableListView android:id="@+id/itinerary_list" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@color/transparent" android:transcriptMode="disabled" android:cacheColorHint="@color/transparent" android:groupIndicator="@null" android:childDivider="@color/transparent" android:divider="@drawable/divider_horizontal_full" android:choiceMode="singleChoice" android:layout_weight="1" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/banner_ad_fragment" app:layout_constraintTop_toBottomOf="@+id/app_bar"/>
+    <androidx.fragment.app.FragmentContainerView android:name="com.moovit.app.ads.MoovitAnchoredBannerAdFragment" android:id="@+id/banner_ad_fragment" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

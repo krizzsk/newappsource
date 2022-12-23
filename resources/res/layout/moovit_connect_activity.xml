@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <include android:id="@+id/reset_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginBottom="22dp" layout="@layout/moovit_connect_reset"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/moovit_connect_fields"/>
+        <Button android:enabled="false" android:id="@+id/submit_button" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorError" android:gravity="center" android:layout_gravity="center" android:id="@+id/submit_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:textAlignment="center"/>
+        <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@+id/forwarder" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40dp" android:textAlignment="center"/>
+    </LinearLayout>
+</ScrollView>

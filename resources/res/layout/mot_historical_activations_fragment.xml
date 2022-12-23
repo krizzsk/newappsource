@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/show_bills_view" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="4dp" app:layout_constraintBottom_toTopOf="@+id/show_bills_view" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:srcCompat="@drawable/shadow_top_4"/>
+    <Button android:id="@+id/show_bills_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/payment_mot_upcoming_bills" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" style="?attr/borderlessButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

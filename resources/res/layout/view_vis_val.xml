@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/container_vis_val_cells" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/vis_val_cell_0" style="@style/VisValCell"/>
+        <View android:id="@+id/vis_val_cell_1" style="@style/VisValCell"/>
+        <View android:id="@+id/vis_val_cell_2" style="@style/VisValCell"/>
+    </LinearLayout>
+    <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/textview_vis_val_date_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:shadowColor="@android:color/black" android:shadowDx="0" android:shadowDy="0" android:shadowRadius="12" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+</FrameLayout>

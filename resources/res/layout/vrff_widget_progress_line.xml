@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/progress_item_check" android:visibility="invisible" android:layout_width="@dimen/vrff_size_24" android:layout_height="@dimen/vrff_size_24" android:importantForAccessibility="no"/>
+    <ProgressBar android:id="@+id/progress_item_spinner" android:visibility="gone" android:layout_width="@dimen/vrff_size_24" android:layout_height="@dimen/vrff_size_24" android:indeterminate="true" android:indeterminateDrawable="@drawable/vrff_button_loading_hollow" android:indeterminateDuration="1500" style="?android:attr/progressBarStyleInverse"/>
+    <com.veriff.views.VeriffTextView android:textSize="@dimen/vrff_text_size_14" android:layout_gravity="center_vertical" android:id="@+id/progress_item_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/vrff_margin_s" app:vrff_text_color="2"/>
+</merge>

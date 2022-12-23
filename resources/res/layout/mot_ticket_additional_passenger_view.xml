@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.design.view.list.ListItemView android:layout_gravity="center" android:id="@+id/ticket_fare_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/accessory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="true" android:layoutDirection="ltr">
+            <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.moovit.commons.view.FormatTextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:id="@+id/passenger_count" android:layout_width="wrap_content" android:layout_height="wrap_content" app:format=" X %1$d"/>
+        </LinearLayout>
+    </com.moovit.design.view.list.ListItemView>
+</com.google.android.material.card.MaterialCardView>

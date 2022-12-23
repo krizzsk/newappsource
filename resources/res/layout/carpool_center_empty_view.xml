@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Space android:layout_width="match_parent" android:layout_height="100dp"/>
+    <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:layout_gravity="center_horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carpool_ride_empty_state" android:textAlignment="center"/>
+    <Space android:layout_width="match_parent" android:layout_height="30dp"/>
+    <Button android:layout_gravity="center_horizontal" android:id="@+id/learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/carpool_center_more_info_button" style="?attr/materialButtonOutlinedStyle"/>
+</LinearLayout>

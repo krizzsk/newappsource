@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/selectedForValidationImageView1" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/com_masabi_justride_sdk_selected_indicator" android:scaleType="fitCenter" android:adjustViewBounds="true" android:rotation="180"/>
+        <androidx.fragment.app.FragmentContainerView android:layout_gravity="center" android:id="@+id/barcodeFragmentContainer" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/selectedForValidationImageView2" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/com_masabi_justride_sdk_selected_indicator" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/barcodeButtonsContainer" android:padding="2dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/primaryBarcodeButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/JustRideSDKUniversalBarcodeButton"/>
+        <View android:id="@+id/barcodeButtonsDivider" android:layout_width="2dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/secondaryBarcodeButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/JustRideSDKUniversalBarcodeButton"/>
+    </LinearLayout>
+</LinearLayout>

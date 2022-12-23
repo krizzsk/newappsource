@@ -1,0 +1,19 @@
+﻿{
+	"type": "container",
+	"layout":{
+		"h": 26
+	},
+	"layers": [
+		{
+			"type":"image",
+			"id":"%3$s",
+			"color": "%1$s",
+			"layout":{
+				"x": 0.5,
+				"y": 0.5,
+				"halign": "center",
+				"valign": "center"
+			}
+		}
+	]
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.cubic.umo.p045ad.playback.p046ui.views.AKImageView android:layout_gravity="center" android:id="@+id/iv_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/umoak_banner_placeholder_320x50" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/umoak_name"/>
+</FrameLayout>

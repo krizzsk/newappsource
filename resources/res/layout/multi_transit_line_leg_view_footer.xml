@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/header_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginEnd="8dp">
+        <TextView android:textAppearance="?attr/textAppearanceCaptionStrong" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:id="@+id/footer_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tripplan_itinerary_stops_list_label" android:importantForAccessibility="no"/>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/footer_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_change" android:importantForAccessibility="no" style="?attr/textButtonSlimStyle"/>
+    </LinearLayout>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/line_view" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants" android:layout_marginEnd="@dimen/screen_edge" style="?attr/transitLineItineraryListItemStyle"/>
+</LinearLayout>

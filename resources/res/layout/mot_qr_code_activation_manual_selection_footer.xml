@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/colorSurface" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_5">
+    <Button android:id="@+id/action_select_fare" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/payment_mot_activation_manual_fare_selection" app:textAllCaps="false" style="?attr/borderlessButtonStyle"/>
+</FrameLayout>

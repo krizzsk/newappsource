@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/guideline" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintGuide_begin="?android:attr/actionBarSize"/>
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="28dp" app:layout_constraintBottom_toBottomOf="@+id/guideline" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" style="@style/Widget.Moovit.AppBarLayout">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0" style="@style/Widget.Moovit.Toolbar.Light.Transparent"/>
+            <ImageView android:id="@+id/handle" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" app:layout_constraintBottom_toBottomOf="@+id/guideline" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:srcCompat="@drawable/ic_bottom_sheet_handle_on_surface_emphasis_low"/>
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/guideline"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

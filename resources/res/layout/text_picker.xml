@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/textPickerStyle">
+    <Button android:id="@+id/start_arrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@drawable/wdg_text_picker_ic_arrow_start_24" style="?attr/textPickerImageButtonStyle"/>
+    <ViewAnimator android:id="@+id/view_animator" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:animateFirstView="false"/>
+    <Button android:id="@+id/end_arrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@drawable/wdg_text_picker_ic_arrow_end_24" style="?attr/textPickerImageButtonStyle"/>
+</merge>

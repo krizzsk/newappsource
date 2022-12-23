@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:paddingTop="24dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" app:srcCompat="@drawable/ic_schedule_train_24_on_surface"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/list_item_view" android:background="@null" android:paddingTop="8dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:subtitleTextColor="?attr/colorOnSurface" app:title="@string/suggested_routes_schedule"/>
+</LinearLayout>

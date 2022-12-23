@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button_frame" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/vrff_size_56">
+        <ImageView android:layout_gravity="center" android:id="@+id/button_image" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+        <TextView android:gravity="center" android:id="@+id/button_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/vrffButton.text"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/button_loader" android:layout_width="24dp" android:layout_height="24dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/vrff_button_loading_full" android:indeterminateDuration="2500"/>
+    </LinearLayout>
+</merge>

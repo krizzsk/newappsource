@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="carpool_message_chooser_messages">
+        <item>@string/carpool_message_chooser_1</item>
+        <item>@string/carpool_message_chooser_2</item>
+    </array>
+    <array name="exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </array>
+    <array name="line_cleanliness_options_array">
+        <item>@string/cleanliness_spotless</item>
+        <item>@string/cleanliness_clean</item>
+        <item>@string/cleanliness_dirty</item>
+        <item>@string/cleanliness_filthy</item>
+    </array>
+    <array name="line_crowdedness_options_array">
+        <item>@string/crowdedness_line_available_seats</item>
+        <item>@string/crowdedness_line_standing_only</item>
+        <item>@string/crowdedness_line_crowded</item>
+    </array>
+    <array name="line_incident_options_array">
+        <item>@string/incident_security</item>
+        <item>@string/incident_medical</item>
+        <item>@string/incident_fire</item>
+        <item>@string/other</item>
+    </array>
+    <array name="line_platform_change_options_array">
+        <item>@string/temporary</item>
+        <item>@string/permanent</item>
+    </array>
+    <array name="line_temperature_options_array">
+        <item>@string/line_temperature_freezing</item>
+        <item>@string/line_temperature_cool</item>
+        <item>@string/line_temperature_good</item>
+        <item>@string/line_temperature_warm</item>
+        <item>@string/line_temperature_boiling</item>
+    </array>
+    <array name="max_walk_time">
+        <item>@string/carpool_passenger_5min_time_picker</item>
+        <item>@string/carpool_passenger_10min_time_picker</item>
+        <item>@string/carpool_passenger_15min_time_picker</item>
+        <item>@string/carpool_passenger_30min_time_picker</item>
+    </array>
+    <array name="month_array">
+        <item>@string/month</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </array>
+    <array name="report_line_cleanliness">
+        <item>@drawable/wdg_ic_report_cleanliness_spotless</item>
+        <item>@drawable/wdg_ic_report_cleanliness_clean</item>
+        <item>@drawable/wdg_ic_report_cleanliness_dirty</item>
+        <item>@drawable/wdg_ic_report_cleanliness_filthy</item>
+    </array>
+    <array name="report_line_crowdedness">
+        <item>@drawable/wdg_ic_report_crowdedness_empty</item>
+        <item>@drawable/wdg_ic_report_crowdedness_half_full</item>
+        <item>@drawable/wdg_ic_report_crowdedness_full</item>
+    </array>
+    <array name="report_line_temperature">
+        <item>@drawable/wdg_ic_report_tempreture_freezing</item>
+        <item>@drawable/wdg_ic_report_tempreture_cool</item>
+        <item>@drawable/wdg_ic_report_tempreture_good</item>
+        <item>@drawable/wdg_ic_report_tempreture_warm</item>
+        <item>@drawable/wdg_ic_report_tempreture_boiling</item>
+    </array>
+    <array name="report_station_cleanliness">
+        <item>@drawable/wdg_ic_report_cleanliness_spotless</item>
+        <item>@drawable/wdg_ic_report_cleanliness_clean</item>
+        <item>@drawable/wdg_ic_report_cleanliness_dirty</item>
+        <item>@drawable/wdg_ic_report_cleanliness_filthy</item>
+    </array>
+    <array name="report_station_crowdedness">
+        <item>@drawable/wdg_ic_report_crowdedness_empty</item>
+        <item>@drawable/wdg_ic_report_crowdedness_half_full</item>
+        <item>@drawable/wdg_ic_report_crowdedness_full</item>
+        <item>@drawable/wdg_ic_report_crowdedness_packed</item>
+    </array>
+    <array name="stop_cleanliness_options_array">
+        <item>@string/cleanliness_spotless</item>
+        <item>@string/cleanliness_clean</item>
+        <item>@string/cleanliness_dirty</item>
+        <item>@string/cleanliness_filthy</item>
+    </array>
+    <array name="stop_crowdedness_options_array">
+        <item>@string/crowdedness_empty</item>
+        <item>@string/crowdedness_half_full</item>
+        <item>@string/crowdedness_full</item>
+        <item>@string/crowdedness_packed</item>
+    </array>
+    <array name="stop_facility_condition_options_array">
+        <item>@string/facility_condition_elevator</item>
+        <item>@string/facility_condition_escalator</item>
+        <item>@string/facility_condition_platform</item>
+        <item>@string/other</item>
+    </array>
+    <array name="stop_happening_options_array">
+        <item>@string/stop_happening_show</item>
+        <item>@string/stop_happening_concert</item>
+        <item>@string/other</item>
+    </array>
+    <array name="stop_incident_options_array">
+        <item>@string/incident_security</item>
+        <item>@string/incident_medical</item>
+        <item>@string/incident_fire</item>
+        <item>@string/other</item>
+    </array>
+    <array name="supported_menu_ids">
+        <item>@id/menu_mot_center</item>
+        <item>@id/menu_tickets_center</item>
+        <item>@id/menu_favorites_sync</item>
+        <item>@id/menu_carpool_center</item>
+        <item>@id/menu_tod_rides_center</item>
+        <item>@id/menu_notifications_center</item>
+        <item>@id/menu_service_alerts</item>
+        <item>@id/menu_transportation_maps</item>
+        <item>@id/menu_spread_the_love</item>
+        <item>@id/menu_rate_us</item>
+        <item>@id/menu_accessibility</item>
+        <item>@id/menu_settings</item>
+        <item>@id/menu_help</item>
+        <item>@id/menu_version_details</item>
+        <item>@id/menu_about</item>
+        <item>@id/menu_feedback</item>
+        <item>@id/menu_ride_sharing_login</item>
+        <item>@id/menu_ride_sharing_center</item>
+        <item>@id/menu_campaigns</item>
+        <item>@id/menu_wondo_offers</item>
+        <item>@id/menu_wondo_codes</item>
+        <item>@id/menu_wondo_rewards</item>
+        <item>@id/menu_wondo_invite</item>
+        <item>@id/menu_wondo_faq</item>
+        <item>@id/menu_accessibility_statement</item>
+        <item>@id/menu_ad_free</item>
+    </array>
+    <array name="upgradeV1ToV2">
+        <item>ALTER TABLE metro_info ADD COLUMN metro_class TEXT NOT NULL DEFAULT &apos;NA&apos;;</item>
+    </array>
+    <array name="upgradeV2ToV3">
+        <item>ALTER TABLE web_pages ADD COLUMN web_page_type INTEGER NOT NULL DEFAULT &apos;1&apos;;</item>
+        <item>ALTER TABLE web_pages ADD COLUMN web_page_bg_color INTEGER;</item>
+    </array>
+    <array name="upgradeV3ToV4">
+        <item>ALTER TABLE revisions ADD COLUMN custom_poi_search_data_loaded BOOLEAN NOT NULL DEFAULT &apos;0&apos;;</item>
+        <item>ALTER TABLE revisions ADD COLUMN custom_poi_search_fts_locale TEXT;</item>
+        <item>CREATE TABLE IF NOT EXISTS custom_poi_data(metro_id INTEGER NOT NULL,revision INTEGER NOT NULL,poi_data_id INTEGER NOT NULL,poi_data_image BLOB,poi_data_title TEXT,poi_data_subtitle TEXT,poi_data_lat INTEGER NOT NULL,poi_data_lon INTEGER NOT NULL,PRIMARY KEY(metro_id,revision,poi_data_id));</item>
+        <item>CREATE VIRTUAL TABLE IF NOT EXISTS custom_poi_fts USING fts5(poi_title,poi_subtitle,prefix=&apos;1 2 3 4&apos;);</item>
+    </array>
+    <array name="upgradeV4ToV5">
+        <item>DROP TABLE IF EXISTS stops_lines;</item>
+        <item>DROP TABLE IF EXISTS stops;</item>
+        <item>CREATE TABLE IF NOT EXISTS stops(metro_id INTEGER NOT NULL,revision INTEGER NOT NULL,stop_id INTEGER NOT NULL,stop_name TEXT NOT NULL,stop_code TEXT,stop_lat INTEGER NOT NULL,stop_lon INTEGER NOT NULL,stop_image_data BLOB,stop_map_images_data BLOB NOT NULL,stop_pathways_data BLOB NOT NULL,stop_main_transit_type_id INTEGER NOT NULL,stop_amenities INTEGER NOT NULL DEFAULT 0,PRIMARY KEY(metro_id,revision,stop_id));</item>
+        <item>CREATE TABLE IF NOT EXISTS stops_lines(metro_id INTEGER NOT NULL,revision INTEGER NOT NULL,stop_id INTEGER NOT NULL,line_id INTEGER NOT NULL,platform_name TEXT,line_order_index INTEGER NOT NULL,PRIMARY KEY(metro_id,revision,stop_id,line_id)FOREIGN KEY(metro_id,revision,stop_id) REFERENCES stops(metro_id,revision,stop_id));</item>
+        <item>CREATE INDEX IF NOT EXISTS stop_lat_lon_index ON stops(stop_lat,stop_lon);</item>
+    </array>
+    <array name="upgradeV5ToV6">
+        <item>ALTER TABLE revisions ADD COLUMN gtfs_shape_segments BOOLEAN NOT NULL DEFAULT &apos;0&apos;;</item>
+        <item>CREATE TABLE IF NOT EXISTS shape_segments(metro_id INTEGER NOT NULL,revision INTEGER NOT NULL,segment_id INTEGER NOT NULL,from_stop_id INTEGER NOT NULL,to_stop_id INTEGER NOT NULL,segment_polyline TEXT NOT NULL,PRIMARY KEY(metro_id,revision,segment_id));</item>
+    </array>
+    <array name="us_states">
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>American Samoa</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>District of Columbia</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Guam</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Northern Marianas Islands</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Puerto Rico</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Virgin Islands</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </array>
+    <array name="us_states_code">
+        <item>AL</item>
+        <item>AK</item>
+        <item>AS</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>DC</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>GU</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MN</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>MP</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>PR</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UM</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>VI</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </array>
+</resources>

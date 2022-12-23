@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_activated="true">
+        <shape>
+            <corners android:radius="4dp"/>
+            <stroke android:width="4dp" android:color="@color/vrffBarcodeGreen"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="4dp"/>
+            <stroke android:width="4dp" android:color="@color/vrffWhite"/>
+        </shape>
+    </item>
+</selector>

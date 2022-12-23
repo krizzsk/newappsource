@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="?attr/colorSurface" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/screen_edge">
+        <android.widget.Space android:layout_width="wrap_content" android:layout_height="40dp"/>
+        <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:ellipsize="end" android:gravity="center" android:id="@+id/survey_title" android:layout_width="match_parent" android:layout_height="80dp" android:maxLines="4" android:textAlignment="center" app:autoSizeMaxTextSize="18sp" app:autoSizeMinTextSize="12sp" app:autoSizeStepGranularity="1sp" app:autoSizeTextType="1"/>
+        <android.widget.Space android:layout_width="wrap_content" android:layout_height="35dp"/>
+        <View android:background="?attr/colorDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="30dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/answers_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/img_moovit_dude_44"/>
+</FrameLayout>

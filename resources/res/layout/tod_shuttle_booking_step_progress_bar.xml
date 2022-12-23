@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ProgressBar android:id="@+id/progress_bar" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" android:layout_margin="12dp" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateTint="?attr/colorOnPrimary" app:layout_constraintBottom_toBottomOf="@+id/button" app:layout_constraintLeft_toLeftOf="@+id/button" app:layout_constraintRight_toRightOf="@+id/button" app:layout_constraintTop_toTopOf="@+id/button"/>
+</merge>

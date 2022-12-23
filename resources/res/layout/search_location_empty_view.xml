@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.design.view.AlertMessageView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:icon="@drawable/img_empty_state_omni" android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:positiveButtonText="@string/search_map" android:subtitle="@string/search_location_empty_state"/>

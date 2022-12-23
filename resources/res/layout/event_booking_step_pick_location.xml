@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/event_booking_step_pick_location_event_header"/>
+        <fragment android:layout_gravity="center" android:id="@+id/map_fragment" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:followMode="0" class="com.moovit.map.MapFragment"/>
+        <ImageView style="?attr/dividerHorizontalFullStyle"/>
+        <Button android:id="@+id/next_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="10dp" android:text="@string/action_next"/>
+    </LinearLayout>
+    <androidx.core.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="?attr/colorPrimary" style="?android:attr/progressBarStyle"/>
+</FrameLayout>

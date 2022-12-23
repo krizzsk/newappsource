@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Space android:layout_width="match_parent" android:layout_height="30dp"/>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/name_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/name" app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/name" android:layout_width="match_parent" android:layout_height="match_parent" android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/email_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/action_mail" app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/email" android:layout_width="match_parent" android:layout_height="match_parent" android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <include layout="@layout/moovit_connect_password_field"/>
+</merge>

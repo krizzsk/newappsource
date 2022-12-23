@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/rides_history" android:title="@string/carpool_past_rides_activity_title" app:showAsAction="never"/>
+    <item android:id="@+id/add_credit_card" android:title="@string/carpool_center_add_credit_card" app:showAsAction="never"/>
+    <item android:id="@+id/about_carpool_service" android:title="@string/carpool_center_more_info_title" app:showAsAction="never"/>
+    <item android:id="@+id/company_info" android:title="@string/carpool_center_add_company" app:showAsAction="never"/>
+    <item android:id="@+id/send_coupon_code" android:title="@string/carpool_passenger_promo_code_more_menu" app:showAsAction="never"/>
+</menu>

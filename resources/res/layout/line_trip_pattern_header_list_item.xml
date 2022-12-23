@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Moovit.Dark" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:background="?attr/colorSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64dp">
+    <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:id="@+id/title" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <ImageButton android:id="@+id/action_map" android:background="?attr/selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="center" android:minWidth="48dp" android:importantForAccessibility="no" app:srcCompat="@drawable/ic_map_24_primary"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Wondo" android:id="@+id/promo_code_action_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/promotion_code_dockless_vehicle_action" app:icon="@drawable/ic_discover_wondo_24" style="?attr/materialButtonStyle"/>

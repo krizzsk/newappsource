@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetEnd="@dimen/screen_edge" style="@style/Widget.Moovit.Toolbar.Dark">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/trip_planner_locations_fragment"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/trip_planner_search_again_strip"/>
+    <fragment android:name="com.moovit.app.history.HistoryItemResultsFragment" android:id="@+id/trip_plan_history_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

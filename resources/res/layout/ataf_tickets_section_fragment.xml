@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/ataf_dashboard_tickets_section_title" style="?attr/listItemSectionHeaderStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_ticket_full_24_on_surface_emphasis_medium" android:id="@+id/discover_wondo_item" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/buy_ticket">
+        <Button android:theme="@style/ThemeOverlay.Moovit.Button.Secondary" android:id="@+id/accessory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy" style="@style/Widget.Moovit.ListItem.Accessory.Button"/>
+    </com.moovit.design.view.list.ListItemView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_screen_edge" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/input_field_container" android:padding="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:divider="@drawable/divider_horizontal_full_24_transparent" android:showDividers="middle" app:layout_constraintTop_toBottomOf="@+id/icon"/>
+        <FrameLayout android:id="@+id/cta_container" android:background="?attr/colorSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+            <Button android:enabled="false" android:id="@+id/action_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="@dimen/screen_edge" android:text="@string/action_continue" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

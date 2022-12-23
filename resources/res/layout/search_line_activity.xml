@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:liftOnScroll="true">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="15" style="@style/Widget.Moovit.Toolbar.Light.Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.moovit.commons.view.ImeFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <fragment android:id="@+id/search_line_fragment" android:layout_width="match_parent" android:layout_height="match_parent" class="com.moovit.home.lines.search.SearchLineFragment"/>
+    </com.moovit.commons.view.ImeFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

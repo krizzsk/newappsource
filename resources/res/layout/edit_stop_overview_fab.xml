@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.clans.fab.FloatingActionMenu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:layout_marginEnd="12dp" app:menu_colorNormal="?attr/colorPrimary" app:menu_colorPressed="#1d51a6" app:menu_colorRipple="#1d51a6" app:menu_icon="@drawable/ic_edit_24_on_primary" app:menu_labels_colorNormal="?attr/colorSurface" app:menu_labels_colorPressed="?attr/colorSurfaceVariant" app:menu_labels_textColor="?attr/colorOnSurface">
+    <include layout="@layout/edit_stop_overview_fab_menu_items"/>
+</com.github.clans.fab.FloatingActionMenu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/ThemeOverlay.Moovit.Dark" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:id="@+id/message" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="55dp" android:text="@string/reinstall_survey_message" app:layout_constraintTop_toTopOf="0" style="?attr/textViewCenteredStyle"/>
+        <com.google.android.material.card.MaterialCardView android:theme="@style/ThemeOverlay.Moovit.Light" android:id="@+id/card_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginTop="55dp" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="@dimen/screen_edge" android:animateLayoutChanges="true" app:layout_constraintTop_toBottomOf="@+id/message">
+            <ViewAnimator android:id="@+id/content_animator" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:measureAllChildren="false" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" android:animateFirstView="false" android:animateLayoutChanges="true">
+                <include layout="@layout/reinstall_popup_survey_options"/>
+                <include layout="@layout/reinstall_popup_survey_done"/>
+            </ViewAnimator>
+        </com.google.android.material.card.MaterialCardView>
+        <ViewAnimator android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/icon_animator" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="40dp" android:measureAllChildren="true" android:inAnimation="@anim/fade_in" android:outAnimation="@anim/fade_out" android:animateFirstView="false" android:elevation="@dimen/elevation_3" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/message">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" app:srcCompat="@drawable/img_moovit_dude_44"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" app:srcCompat="@drawable/ic_check_mark_circ_44_info"/>
+        </ViewAnimator>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

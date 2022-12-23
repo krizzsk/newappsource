@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_stop_pathway_type_header"/>
+    <Spinner android:id="@+id/type_picker" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_marginTop="11dp" android:layout_marginBottom="11dp" style="?attr/dividerHorizontalFullStyle"/>
+</LinearLayout>

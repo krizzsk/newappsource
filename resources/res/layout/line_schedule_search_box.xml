@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.design.view.list.ListItemLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/change_destination_stop" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/screen_edge" android:paddingTop="8dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+    <TextView android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:tag="title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/line_schedule_destination_option_all"/>
+    <ImageButton android:id="@+id/accessory" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_search_24_on_surface_emphasis_medium"/>
+</com.moovit.design.view.list.ListItemLayout>

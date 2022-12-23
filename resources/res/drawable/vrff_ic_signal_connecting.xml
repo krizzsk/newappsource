@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:duration="500">
+        <layer-list>
+            <item android:drawable="@drawable/vrff_ic_signal_3"/>
+            <item android:drawable="@drawable/vrff_ic_signal_2"/>
+            <item android:drawable="@drawable/vrff_ic_signal_1"/>
+        </layer-list>
+    </item>
+    <item android:duration="500">
+        <layer-list>
+            <item android:drawable="@drawable/vrff_ic_signal_3"/>
+            <item android:drawable="@drawable/vrff_ic_signal_2"/>
+            <item android:drawable="@drawable/vrff_ic_signal_1_on"/>
+        </layer-list>
+    </item>
+    <item android:duration="500">
+        <layer-list>
+            <item android:drawable="@drawable/vrff_ic_signal_3"/>
+            <item android:drawable="@drawable/vrff_ic_signal_2_on"/>
+            <item android:drawable="@drawable/vrff_ic_signal_1"/>
+        </layer-list>
+    </item>
+    <item android:duration="500">
+        <layer-list>
+            <item android:drawable="@drawable/vrff_ic_signal_3_on"/>
+            <item android:drawable="@drawable/vrff_ic_signal_2"/>
+            <item android:drawable="@drawable/vrff_ic_signal_1"/>
+        </layer-list>
+    </item>
+</animation-list>

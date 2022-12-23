@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_video_player_controls" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_play" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitCenter" android:contentDescription="@string/umoak_name" app:srcCompat="@drawable/umoak_ic_play"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/iv_maximize" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginBottom="10dp" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:contentDescription="@string/umoak_name" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/umoak_ic_maximize" app:tint="#7d8989"/>
+    <ImageView android:id="@+id/iv_minimize" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginBottom="10dp" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:contentDescription="@string/umoak_name" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/umoak_ic_minimize" app:tint="#7d8989"/>
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="available_bicycle_docks">
+        <item quantity="one">@string/tripplan_itinerary_bike_station_empty_available_singular_label</item>
+        <item quantity="other">@string/tripplan_itinerary_bike_station_empty_available_label</item>
+    </plurals>
+    <plurals name="available_bicycles">
+        <item quantity="one">@string/tripplan_itinerary_bike_station_number_available_singular_label</item>
+        <item quantity="other">@string/tripplan_itinerary_bike_station_number_available_label</item>
+    </plurals>
+    <plurals name="com_masabi_justride_sdk_days">
+        <item quantity="one">a day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="com_masabi_justride_sdk_hours">
+        <item quantity="one">an hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="com_masabi_justride_sdk_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="com_masabi_justride_sdk_minutes_left">
+        <item quantity="one">%d minute left</item>
+        <item quantity="other">%d minutes left</item>
+    </plurals>
+    <plurals name="com_masabi_justride_sdk_numbers_of_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="com_masabi_justride_sdk_numbers_of_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="com_masabi_justride_sdk_numbers_of_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="com_masabi_justride_sdk_seconds_left">
+        <item quantity="other">a few seconds left</item>
+    </plurals>
+    <plurals name="event_booking_option_selector_step_available_tickets">
+        <item quantity="one">@string/event_booking_option_selector_step_available_tickets_single</item>
+        <item quantity="other">@string/event_booking_option_selector_step_available_tickets_plural</item>
+    </plurals>
+    <plurals name="event_booking_purchase_confirmation_tickets_subtotal">
+        <item quantity="one">@string/event_booking_subtotal_ticket_single</item>
+        <item quantity="other">@string/event_booking_subtotal_ticket_plural</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Fast forward %d second</item>
+        <item quantity="other">Fast forward %d seconds</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rewind %d second</item>
+        <item quantity="other">Rewind %d seconds</item>
+    </plurals>
+    <plurals name="imperial_distance_large">
+        <item quantity="one">@string/units_mile</item>
+        <item quantity="other">@string/units_miles</item>
+    </plurals>
+    <plurals name="imperial_distance_large_abbrev">
+        <item quantity="other">@string/units_miles_short</item>
+    </plurals>
+    <plurals name="imperial_distance_primary">
+        <item quantity="one">@string/units_yard</item>
+        <item quantity="other">@string/units_yards</item>
+    </plurals>
+    <plurals name="imperial_distance_primary_abbrev">
+        <item quantity="other">@string/units_yards_short</item>
+    </plurals>
+    <plurals name="live_location_stops_away">
+        <item quantity="one">@string/live_location_info_stop_away</item>
+        <item quantity="other">@string/live_location_info_stops_away</item>
+    </plurals>
+    <plurals name="metric_distance_large">
+        <item quantity="one">@string/units_kilometer</item>
+        <item quantity="other">@string/units_kilometers</item>
+    </plurals>
+    <plurals name="metric_distance_large_abbrev">
+        <item quantity="other">@string/units_kilometers_short</item>
+    </plurals>
+    <plurals name="metric_distance_primary">
+        <item quantity="one">@string/units_meter</item>
+        <item quantity="other">@string/units_meters</item>
+    </plurals>
+    <plurals name="metric_distance_primary_abbrev">
+        <item quantity="other">@string/units_meters_short</item>
+    </plurals>
+    <plurals name="mot_section_qr_subtitle_options">
+        <item quantity="one">@string/payment_directions_mot_exit_code</item>
+        <item quantity="other">@string/payment_directions_mot_exit_code_plural</item>
+    </plurals>
+    <plurals name="mot_station_qr_entrance_title_options">
+        <item quantity="one">@string/payment_mot_train_qr_entrance_hint</item>
+        <item quantity="other">@string/payment_mot_train_qr_entrance_hint_plural</item>
+    </plurals>
+    <plurals name="mot_station_qr_entrance_warning_options">
+        <item quantity="one">@string/payment_mot_entrance_qr_end</item>
+        <item quantity="other">@string/payment_mot_entrance_qr_plural</item>
+    </plurals>
+    <plurals name="mot_station_qr_exit_title_options">
+        <item quantity="one">@string/payment_mot_train_qr_exit_hint</item>
+        <item quantity="other">@string/payment_mot_train_qr_exit_hint_plural</item>
+    </plurals>
+    <plurals name="mot_station_qr_exit_warning_options">
+        <item quantity="one">@string/payment_mot_exit_qr</item>
+        <item quantity="other">@string/payment_mot_exit_qr_plural</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="passengers">
+        <item quantity="one">@string/units_passenger</item>
+        <item quantity="other">@string/units_passengers</item>
+    </plurals>
+    <plurals name="payment_available_passes">
+        <item quantity="one">@string/payment_one_available_pass</item>
+        <item quantity="other">@string/payment_few_available_passes</item>
+    </plurals>
+    <plurals name="ride_stops_to">
+        <item quantity="one">@string/tripplan_itinerary_ride_stop</item>
+        <item quantity="other">@string/tripplan_itinerary_ride_stops</item>
+    </plurals>
+    <plurals name="stops">
+        <item quantity="one">@string/units_stop</item>
+        <item quantity="other">@string/units_stops</item>
+    </plurals>
+    <plurals name="tickets">
+        <item quantity="one">@string/ticket_single</item>
+        <item quantity="other">@string/ticket_plural</item>
+    </plurals>
+    <plurals name="tod_ride_details_passenger_options">
+        <item quantity="one">@string/tod_passenger_ride_details_passenger_single</item>
+        <item quantity="other">@string/tod_passenger_ride_details_passenger_plural</item>
+    </plurals>
+    <plurals name="transfers">
+        <item quantity="one">@string/transfer_single</item>
+        <item quantity="other">@string/transfer_plural</item>
+    </plurals>
+    <plurals name="tripplan_itinerary_view_show_more_options">
+        <item quantity="one">@string/tripplan_itinerary_more_one</item>
+        <item quantity="other">@string/tripplan_itinerary_more_number</item>
+    </plurals>
+    <plurals name="unit_minutes_span">
+        <item quantity="one">@string/unit_minutes_span_one</item>
+        <item quantity="other">@string/unit_minutes_span_other</item>
+    </plurals>
+    <plurals name="unit_seconds">
+        <item quantity="one">@string/unit_second</item>
+        <item quantity="other">@string/unit_seconds</item>
+    </plurals>
+    <plurals name="voice_over_unit_days">
+        <item quantity="one">@string/voiceover_units_day_hint</item>
+        <item quantity="other">@string/voiceover_units_days_hint</item>
+    </plurals>
+    <plurals name="voice_over_unit_hours">
+        <item quantity="one">@string/voiceover_units_hour_hint</item>
+        <item quantity="other">@string/voiceover_units_hours_hint</item>
+    </plurals>
+    <plurals name="voice_over_unit_minutes">
+        <item quantity="one">@string/voiceover_units_minute_hint</item>
+        <item quantity="other">@string/voiceover_units_minutes_hint</item>
+    </plurals>
+</resources>

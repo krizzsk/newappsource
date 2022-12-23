@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?android:attr/colorBackground" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Moovit.AppBarLayout.Dark">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/tool_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetEnd="@dimen/screen_edge" app:layout_collapseMode="1" style="@style/Widget.Moovit.Toolbar.Dark.Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" layout="@layout/trip_plan_support_loader_failure_view"/>
+</LinearLayout>

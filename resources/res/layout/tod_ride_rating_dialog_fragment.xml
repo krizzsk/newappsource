@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="24dp" android:paddingTop="40dp" android:paddingRight="24dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" app:srcCompat="@drawable/img_tod_rating_strip"/>
+            <TextView android:textAppearance="?attr/textAppearanceBodyStrong" android:textColor="?attr/colorOnSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/tod_passenger_end_ride_popup_title" style="?attr/textViewCenteredStyle"/>
+            <TextView android:textAppearance="?attr/textAppearanceBodySmallStrong" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tod_passenger_rate_title" style="?attr/textViewCenteredStyle"/>
+            <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurfaceEmphasisMedium" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/tod_passenger_rate_subtitle" style="?attr/textViewCenteredStyle"/>
+            <RatingBar android:layout_gravity="center_horizontal" android:id="@+id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:numStars="5" android:stepSize="1" style="?attr/ratingBarStyle"/>
+            <TextView android:textAppearance="?attr/textAppearanceBodySmall" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:id="@+id/reaction" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" style="?attr/textViewCenteredStyle"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/comment_text_input" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/comment" android:layout_width="match_parent" android:layout_height="82dp" android:inputType="textMultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+        <Button android:enabled="false" android:id="@+id/action" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tod_passenger_rate_button"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="invisible" android:layout_width="36dp" android:layout_height="36dp" android:indeterminateTint="?attr/colorOnPrimary"/>
+    </FrameLayout>
+</LinearLayout>

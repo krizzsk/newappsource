@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/show_on_map" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_map" app:icon="@drawable/ic_pin_on_map_16_primary" style="@style/Widget.Moovit.SectionHeader.Accessory.TextButton"/>

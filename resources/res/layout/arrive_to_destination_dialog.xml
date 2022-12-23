@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="22dp" android:paddingBottom="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerInside" app:srcCompat="@drawable/img_done_trip"/>
+    <TextView android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_edge" android:layout_marginRight="@dimen/screen_edge" android:layout_marginBottom="11dp" android:text="@string/tripplan_itinerary_arrival_title" style="?attr/dialogTitleStyle"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tripplan_itinerary_arrival_description" style="?attr/dialogMessageStyle"/>
+</LinearLayout>

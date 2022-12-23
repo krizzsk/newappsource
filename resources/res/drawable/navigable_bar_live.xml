@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:duration="3000" android:drawable="@drawable/anim_live_ride_frame3_24_on_surface"/>
+    <item android:duration="100" android:drawable="@drawable/anim_live_ride_frame2_24_on_surface"/>
+    <item android:duration="100" android:drawable="@drawable/anim_live_ride_frame1_24_on_surface"/>
+    <item android:duration="100" android:drawable="@drawable/anim_live_ride_frame2_24_on_surface"/>
+</animation-list>

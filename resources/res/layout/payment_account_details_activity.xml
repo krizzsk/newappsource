@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/divider_horizontal" android:showDividers="middle">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/name_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/payment_my_account_name" style="?attr/listItemLabeledStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/email_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/payment_registration_enter_email_title" style="?attr/listItemLabeledStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/phone_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/payment_my_account_phone_number" style="?attr/listItemLabeledStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/birth_date_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/payment_registration_dob_hint" style="?attr/listItemLabeledStyle"/>
+    <com.moovit.design.view.list.ListItemView android:id="@+id/address_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:subtitleMaxLines="6" app:title="@string/payment_my_account_address" style="?attr/listItemLabeledStyle"/>
+</LinearLayout>

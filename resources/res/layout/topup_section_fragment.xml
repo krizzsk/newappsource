@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/dashboard_top_up_section_title" style="?attr/listItemSectionHeaderStyle"/>
+    <com.moovit.design.view.list.ListItemView android:icon="@drawable/ic_card_24_tertiary" android:id="@+id/item" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:subtitle="@string/dashboard_top_up_text">
+        <Button android:theme="@style/ThemeOverlay.Moovit.Button.Tertiary" android:id="@+id/accessory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dashboard_top_up_cta_banner" style="@style/Widget.Moovit.ListItem.Accessory.Button"/>
+    </com.moovit.design.view.list.ListItemView>
+</LinearLayout>

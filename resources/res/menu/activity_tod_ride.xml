@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/action_cancel" android:visible="false" android:title="@string/action_cancel" app:showAsAction="never"/>
+    <item android:id="@+id/action_change_destination" android:visible="false" android:title="@string/tod_passenger_ride_change_destination_action" app:showAsAction="never"/>
+    <item android:id="@+id/action_call_support_center" android:visible="false" android:title="@string/tod_passenger_ride_calling_support_center_action" app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/MoovitTheme" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/WidgetRefreshView">
+    <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurfaceEmphasisHigh" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="8dp"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:measureAllChildren="true">
+        <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorLive" android:layout_gravity="center" android:id="@+id/refresh_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/refresh" style="?attr/textViewCenteredStyle"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+    </FrameLayout>
+</LinearLayout>

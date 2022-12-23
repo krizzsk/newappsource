@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rate_us_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:tag="rate_bar" android:paddingLeft="@dimen/screen_edge" android:paddingRight="@dimen/screen_edge" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/rate_us_bar_item"/>
+        <include layout="@layout/rate_us_bar_space"/>
+        <include layout="@layout/rate_us_bar_item"/>
+        <include layout="@layout/rate_us_bar_space"/>
+        <include layout="@layout/rate_us_bar_item"/>
+        <include layout="@layout/rate_us_bar_space"/>
+        <include layout="@layout/rate_us_bar_item"/>
+        <include layout="@layout/rate_us_bar_space"/>
+        <include layout="@layout/rate_us_bar_item"/>
+        <include layout="@layout/rate_us_bar_space"/>
+        <include layout="@layout/rate_us_bar_item"/>
+    </LinearLayout>
+    <android.widget.Space android:layout_width="0dp" android:layout_height="8dp"/>
+    <LinearLayout android:orientation="horizontal" android:tag="rate_bar" android:paddingLeft="48dp" android:paddingRight="48dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/rate_us_bar_item"/>
+        <include layout="@layout/rate_us_bar_space"/>
+        <include layout="@layout/rate_us_bar_item"/>
+        <include layout="@layout/rate_us_bar_space"/>
+        <include layout="@layout/rate_us_bar_item"/>
+        <include layout="@layout/rate_us_bar_space"/>
+        <include layout="@layout/rate_us_bar_item"/>
+        <include layout="@layout/rate_us_bar_space"/>
+        <include layout="@layout/rate_us_bar_item"/>
+    </LinearLayout>
+</LinearLayout>

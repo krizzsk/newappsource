@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Moovit.Dark" android:orientation="horizontal" android:id="@+id/ride_summary" android:background="?attr/colorSurface" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp">
+    <com.moovit.commons.view.FormatTextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurface" android:layout_gravity="center_vertical" android:id="@+id/ride_message" android:layout_width="wrap_content" android:layout_height="wrap_content" app:format="@string/carpool_booking_ride_with"/>
+    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <TextView android:textAppearance="?attr/textAppearanceFootnote" android:textColor="?attr/colorOnSurface" android:layout_gravity="center_vertical" android:id="@+id/ride_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

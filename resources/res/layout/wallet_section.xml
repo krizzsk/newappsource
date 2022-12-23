@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.moovit.design.view.list.ListItemView android:id="@+id/header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:accessoryIgnoreHorizontalPadding="true" app:accessoryLayout="@layout/section_header_accessory_text_button" app:accessoryText="@string/action_show_all" app:title="@string/wallet_my_rides_label" style="?attr/listItemSectionHeaderStyle"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools&gt;" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/profile_image" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="40dp" android:scaleType="centerInside" app:srcCompat="@drawable/img_profile_placeholder_60"/>
+    <TextView android:gravity="center_horizontal" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/user_account_disconnect_title" style="?attr/dialogTitleStyle"/>
+    <TextView android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/user_account_disconnect_text" style="?attr/dialogMessageStyle"/>
+    <Button android:enabled="true" android:id="@+id/cancel_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/not_now_button" style="?attr/dialogPositiveButtonStyle"/>
+    <Button android:enabled="true" android:id="@+id/disconnect_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_account_disconnect" style="?attr/dialogNegativeButtonStyle"/>
+</LinearLayout>

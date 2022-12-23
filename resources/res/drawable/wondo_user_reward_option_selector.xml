@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_checked="true" android:drawable="@drawable/ic_check_mark_circ_24_wondo_turquoise"/>
+    <item android:drawable="@drawable/ic_check_mark_ring_24_on_surface_emphasis_low"/>
+</selector>

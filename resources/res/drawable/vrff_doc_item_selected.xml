@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="#0a005bf2"/>
+            <stroke android:width="2dp" android:color="@color/vrffPrimary01"/>
+            <corners android:radius="@dimen/vrff_container_corner_rad"/>
+        </shape>
+    </item>
+</selector>

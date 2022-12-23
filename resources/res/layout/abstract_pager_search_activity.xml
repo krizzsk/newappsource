@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/abstract_search_activity_toolbar"/>
+    <com.moovit.commons.view.ImeFrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.moovit.commons.view.pager.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.moovit.commons.view.ImeFrameLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+package com.veriff.sdk.camera.camera2.internal.compat.workaround;
+
+import android.annotation.SuppressLint;
+import android.hardware.camera2.CaptureRequest;
+import com.veriff.sdk.camera.camera2.impl.Camera2ImplConfig;
+import com.veriff.sdk.camera.camera2.internal.compat.quirk.DeviceQuirks;
+import com.veriff.sdk.camera.camera2.internal.compat.quirk.ImageCapturePixelHDRPlusQuirk;
+
+public class ImageCapturePixelHDRPlus {
+    @SuppressLint({"NewApi"})
+    public void toggleHDRPlus(int i, Camera2ImplConfig.Builder builder) {
+        if (((ImageCapturePixelHDRPlusQuirk) DeviceQuirks.get(ImageCapturePixelHDRPlusQuirk.class)) != null) {
+            if (i == 0) {
+                builder.setCaptureRequestOption(CaptureRequest.CONTROL_ENABLE_ZSL, Boolean.TRUE);
+            } else if (i == 1) {
+                builder.setCaptureRequestOption(CaptureRequest.CONTROL_ENABLE_ZSL, Boolean.FALSE);
+            }
+        }
+    }
+}

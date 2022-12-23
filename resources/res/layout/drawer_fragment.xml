@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moovit.commons.view.window.ScrimInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="?attr/drawerMenuTheme" android:background="?attr/colorSurface" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:insetsForeground="@color/black_alpha_25" app:setInsetsAsPadding="true">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <include android:id="@+id/menu_items_container" layout="@layout/drawer_fragment_menu"/>
+    </androidx.core.widget.NestedScrollView>
+</com.moovit.commons.view.window.ScrimInsetsFrameLayout>

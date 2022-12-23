@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/screen_edge" android:paddingTop="22dp" android:paddingRight="@dimen/screen_edge" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?attr/textAppearanceHeadline5" android:textColor="?attr/colorOnSurface" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/carpool_daily_ride_reject_survey_title" style="?attr/textViewCenteredStyle"/>
+        <CheckBox android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:id="@+id/option_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55dp" android:text="@string/carpool_daily_ride_reject_survey_option_1"/>
+        <ImageView style="?attr/dividerHorizontalFullStyle"/>
+        <CheckBox android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:id="@+id/option_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="11dp" android:minHeight="55dp"/>
+        <ImageView style="?attr/dividerHorizontalFullStyle"/>
+        <CheckBox android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:id="@+id/option_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="11dp" android:minHeight="55dp" android:text="@string/carpool_daily_ride_reject_survey_option_3"/>
+        <ImageView style="?attr/dividerHorizontalFullStyle"/>
+        <CheckBox android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:id="@+id/option_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="11dp" android:minHeight="55dp" android:text="@string/carpool_daily_ride_reject_survey_option_4"/>
+        <ImageView style="?attr/dividerHorizontalFullStyle"/>
+        <CheckBox android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:id="@+id/option_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="11dp" android:minHeight="55dp" android:text="@string/carpool_daily_ride_reject_survey_option_5"/>
+        <ImageView style="?attr/dividerHorizontalFullStyle"/>
+        <CheckBox android:textAppearance="?attr/textAppearanceBody" android:textColor="?attr/colorOnSurface" android:id="@+id/option_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="11dp" android:minHeight="55dp" android:text="@string/carpool_daily_ride_reject_survey_option_7"/>
+        <Button android:enabled="false" android:id="@+id/submit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-2dp" android:layout_marginRight="-2dp" android:text="@string/action_submit"/>
+    </LinearLayout>
+</ScrollView>
